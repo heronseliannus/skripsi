@@ -64,6 +64,8 @@
                     <li><a href="#faq-page">FAQ</a></li>
                     <li><a href="#blog-page">Blog</a></li>
                     <li><a href="#contact-page">Contact</a></li>
+                    <li><a href="/akun">Buat Akun</a></li>
+                    <li><a href="/pendaftaran">Pendaftaran</a></li>
                 </ul>
             </nav>
         </div>
@@ -660,7 +662,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-xs-12 text-center">
-                        <p>Heron &copy;Copyright 2018 All right resurved.  </p>
+                        <p>Heronselianus &copy;Copyright 2018 All right resurved.  </p>
                     </div>
                 </div>
             </div>

@@ -16,7 +16,7 @@ class CreateUserProgramResultsTable extends Migration
         Schema::create('user_program_results', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('user_id')->references('id')->on('users');
-            $table->integer('program_id')->references('id')->on('programs');
+            $table->integer('program_id')->references(                                                                                                                                                                                                                                                                                                                                                                                                                                  'id')->on('programs');
             $table->string('grade');
             $table->timestamps();
         });

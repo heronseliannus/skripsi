@@ -14,3 +14,12 @@
 Route::get('/', function () {
     return view('home');
 });
+
+Route::get('akun', function()
+{
+  return view('akun');
+});
+Route::get('/pendaftaran', function()
+{
+  return view('pendaftaran');
+});
