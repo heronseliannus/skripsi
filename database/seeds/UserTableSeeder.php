@@ -23,9 +23,9 @@ class UserTableSeeder extends Seeder
             'role_id' => $roleId,
             'password' => Hash::make('secret'), 
             'address' => 'Jalan Picung 107, Sukasari',
-            'kota' => 'Bandung',
-            'provinsi' => 'Jawa Barat',
-            'tgl_lahir' => 'Inputan'
+            'city' => 'Bandung',
+            'state' => 'Jawa Barat',
+            'birth_date' =>  Carbon::parse('10-07-1990'),
             'email' => 'heronselianus1795@gmail.com',
             'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
             'updated_at' => Carbon::now()->format('Y-m-d H:i:s')

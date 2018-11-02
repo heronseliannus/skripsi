@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 
 class RegisterController extends Controller
 {
-    public function show('/register')
+    public function show()
     {
         return view('/register');
     }

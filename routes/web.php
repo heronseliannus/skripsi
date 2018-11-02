@@ -15,11 +15,10 @@ Route::get('/', function () {
     return view('home');
 });
 
-Route::get('akun', function()
-{
+Route::get('akun', function() {
   return view('akun');
 });
-Route::get('/pendaftaran', function()
-{
+
+Route::get('/pendaftaran', function() {
   return view('pendaftaran');
 });
