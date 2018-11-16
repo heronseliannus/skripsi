@@ -22,3 +22,17 @@ Route::get('akun', function() {
 Route::get('/pendaftaran', function() {
   return view('pendaftaran');
 });
+
+Route::get('/login', function(){
+  return view('admin/login');
+});
+
+Route::get('/kelolaregistrasi', function()
+{
+  return view('admin/kelolaregistrasi');
+});
+
+Route::get('/tampilan', function()
+{
+  return view('layout/tampilan');
+});

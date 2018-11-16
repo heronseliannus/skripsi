@@ -14,7 +14,7 @@ class ProgramTableSeeder extends Seeder
     public function run()
     {
         DB::table('programs')->insert([
-            'name' => 'yakub',
+            'name' => 'doni',
             'codename' => '10000987',
             'address' => 'Jalan Picung 107, Sukasari',
             'description' => 'Advanced Mikrotik Management',

@@ -9,10 +9,10 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Title -->
-    <title>Home</title>
+    <title>Telkom CorpU</title>
     <!-- Place favicon.ico in the root directory -->
-    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-    <link rel="shortcut icon" type="image/ico" href="images/favicon.ico" />
+    <link rel="tcu-regular.png" href="images/atcu-regular.png">
+    <link rel="shortcut icon" type="image/tcu-regular.png" href="images/telkom.png" />
     <!-- Plugin-CSS -->
     <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ asset('css/owl.carousel.min.css')}}">
@@ -32,7 +32,6 @@
 </head>
 
 <body data-spy="scroll" data-target="#primary-menu">
-
     <div class="preloader">
         <div class="sk-folding-cube">
             <div class="sk-cube1 sk-cube"></div>
@@ -52,7 +51,7 @@
                     <span class="icon-bar"></span>
                 </button>
                 <a href="#" class="navbar-brand logo">
-                    <h2>Telkom Indonesia</h2>
+                    <img src="images/tcu-regular.png" width="200" height="100" alt="">
                 </a>
             </div>
             <!--Logo/-->
@@ -61,11 +60,11 @@
                     <li class="active"><a href="#home-page">Home</a></li>
                     <li><a href="#service-page">Info</a></li>
                     <li><a href="#feature-page">Profil</a></li>
-                    <li><a href="#blog-page">Blog</a></li>
+                    <li><a href="#blog-page">Galery</a></li>
                     <li><a href="#register">Pendaftaran</a></li>
                     <li><a href="#contact-page">Contact</a></li>
                     <li><a href="/akun">Cek Nilai</a></li>
-                    <li><a href="/master">Login</a></li>
+                    <li><a href="/login">Login</a></li>
                 </ul>
             </nav>
         </div>
@@ -80,26 +79,32 @@
         <div class="container">
             <div class="row v-center">
                 <div class="col-xs-12 col-md-7 header-text">
-                    <h2>Let's join us to advanced you skill</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero ex inventore vel error quibusdam animi fugiat, doloribus dolores consectetur nulla deleniti sint blanditiis quod debitis quis vitae officiis tempora numquam.</p>
+                    <h2>Center of Excellence</h2>
+                    <p>Telkom Corporate University (Telkom CorpU) didefinisikan sebagai  wahana strategis
+                       yang dirancang untuk mendukung pencapaian misi perusahaan dengan melakukan
+                       kegiatan-kegiatan untuk memperkuat dan  memperkokoh kemampuan belajar individu
+                       dan organisasi dalam rangka  membentuk Center of Excellence. Dengan adanya
+                       pencanangan program Center  of Excellence dengan Telkom CorpU, maka Telkom
+                       melakukan langkah  breakthrough dengan menyempurnakan integrasi sesuai dengan
+                       konsep CorpU  yang ideal.</p>
                     <a href="#" class="button white">Watch video</a>
                 </div>
-                <div class="hidden-xs hidden-sm col-md-5 text-right">
+                <div class="hidden-xs hidden-sm col-md-4 text-right">
                     <div class="screen-box screen-slider">
                         <div class="item">
-                            <img src="images/screen-1.jpg" alt="">
+                            <img src="images/telkom1.jpg" alt="">
                         </div>
                         <div class="item">
-                            <img src="images/screen-2.jpg" alt="">
+                            <img src="images/telkom2.jpg" alt="">
                         </div>
                         <div class="item">
-                            <img src="images/screen-3.jpg" alt="">
+                            <img src="images/telkom3.jpg" alt="">
                         </div>
                         <div class="item">
-                            <img src="images/screen-4.jpg" alt="">
+                            <img src="images/telkom4.jpg" alt="">
                         </div>
                         <div class="item">
-                            <img src="images/screen-5.jpg" alt="">
+                            <img src="images/telkom5.jpg" alt="">
                         </div>
                     </div>
                 </div>
@@ -117,28 +122,37 @@
                 <div class="col-xs-12 col-sm-4">
                     <div class="box">
                         <div class="box-icon">
-                            <img src="images/service-icon-1.png" alt="">
+                            <img src="images/telkom6.jpg" alt="">
                         </div>
-                        <h4>EASY TO USE</h4>
-                        <p>Lorem ipsum dolor sit amt, consectet adop adipisicing elit, sed do eiusmod tepo raraincididunt ugt labore.</p>
+                        <br><br><br><br><br><br>
+                        <h4>Pelatihan Kepemimpinan</h4>
+                        <p>Melalui Telkom Corporate University, Telkom melahirkan leader-leader  masa depan
+                            yang berkualitas dan berkelas internasional atau great  leader.
+                            </p>
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-4">
                     <div class="box">
                         <div class="box-icon">
-                            <img src="images/service-icon-2.png" alt="">
+                            <img src="images/telkom2.jpg" alt="">
                         </div>
-                        <h4>AWESOEM DESIGN</h4>
-                        <p>Lorem ipsum dolor sit amt, consectet adop adipisicing elit, sed do eiusmod tepo raraincididunt ugt labore.</p>
+                        <br><br><br><br><br><br>
+                        <h4>Digital Learning</h4>
+                        <p>Telkom Digital Learning adalah media pembelajaran elektronik  berbasis web (web-
+                            based) yang digunakan dalam proses belajar-mengajar,  baik yang bersifat mandiri
+                            maupun wajib.</p>
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-4">
                     <div class="box">
                         <div class="box-icon">
-                            <img src="images/service-icon-3.png" alt="">
+                            <img src="images/telkom3.jpg" alt="">
                         </div>
-                        <h4>EASY TO CUSTOMAIZE</h4>
-                        <p>Lorem ipsum dolor sit amt, consectet adop adipisicing elit, sed do eiusmod tepo raraincididunt ugt labore.</p>
+                        <br><br><br><br><br><br>
+                        <h4>Kampiun</h4>
+                        <p>Kampiun merupakan media pembelajaran yang berupa knowledge sharing  antar
+                            karyawan PT Telkom adalah dengan  artikel operasional sehari-hari mulai dari  penelitian, inovasi, sampai SOP
+                            penyelesaian masalah.</p>
                     </div>
                 </div>
             </div>
@@ -156,10 +170,10 @@
                                 <div class="v-center">
                                     <div class="col-xs-12 col-md-6">
                                         <div class="caption-title" data-animation="animated fadeInUp">
-                                            <h2>Easy to build</h2>
+                                            <h2>PELATIHAN KEPEMIMPINAN</h2>
                                         </div>
                                         <div class="caption-desc" data-animation="animated fadeInUp">
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute</p>
+                                            <p>Melalui Telkom Corporate University, Telkom melahirkan leader-leader  masa depan yang berkualitas dan berkelas internasional atau great  leader</p>
                                         </div>
                                         <div class="caption-button" data-animation="animated fadeInUp">
                                             <a href="#" class="button">Read more</a>
@@ -167,12 +181,12 @@
                                     </div>
                                     <div class="col-xs-6 col-md-3">
                                         <div class="caption-photo one" data-animation="animated fadeInRight">
-                                            <img src="images/screen-1.jpg" alt="">
+                                            <img src="images/telkom7.jpg" alt="">
                                         </div>
                                     </div>
                                     <div class="col-xs-6 col-md-3">
                                         <div class="caption-photo two" data-animation="animated fadeInRight">
-                                            <img src="images/screen-2.jpg" alt="">
+                                            <img src="images/telkom8.jpg" alt="">
                                         </div>
                                     </div>
                                 </div>
@@ -181,10 +195,11 @@
                                 <div class="v-center">
                                     <div class="col-xs-12 col-md-6">
                                         <div class="caption-title" data-animation="animated fadeInUp">
-                                            <h2>Easy to use</h2>
+                                            <h2>Digital Learning</h2>
                                         </div>
                                         <div class="caption-desc" data-animation="animated fadeInUp">
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute</p>
+                                            <p>Melalui Telkom Corporate University, Telkom melahirkan leader-leader  masa depan
+                                               yang berkualitas dan berkelas internasional atau great  leader</p>
                                         </div>
                                         <div class="caption-button" data-animation="animated fadeInUp">
                                             <a href="#" class="button">Read more</a>
@@ -192,12 +207,12 @@
                                     </div>
                                     <div class="col-xs-6 col-md-3">
                                         <div class="caption-photo one" data-animation="animated fadeInRight">
-                                            <img src="images/screen-3.jpg" alt="">
+                                            <img src="images/telkom9.jpg" alt="">
                                         </div>
                                     </div>
                                     <div class="col-xs-6 col-md-3">
                                         <div class="caption-photo two" data-animation="animated fadeInRight">
-                                            <img src="images/screen-4.jpg" alt="">
+                                            <img src="images/telkom10.jpg" alt="">
                                         </div>
                                     </div>
                                 </div>
@@ -206,10 +221,13 @@
                                 <div class="v-center">
                                     <div class="col-xs-12 col-md-6">
                                         <div class="caption-title" data-animation="animated fadeInUp">
-                                            <h2>Easy to customize</h2>
+                                            <h2>Business Recommendation</h2>
                                         </div>
                                         <div class="caption-desc" data-animation="animated fadeInUp">
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute</p>
+                                            <p>Selain event pelatihan dan knowledge management, dalam rangka  membantu
+                                                perusahaan mencapai visi dan misi yang telah dicanangkan,  Telkom Corpu juga
+                                                melakukan kolaborasi dan penelitian yang menghasilkan  Business Recommendation.
+                                                Selama tahun 2015, Telkom CorpU berhasil  men-deliver 29 rekomendasi bisnis.</p>
                                         </div>
                                         <div class="caption-button" data-animation="animated fadeInUp">
                                             <a href="#" class="button">Read more</a>
@@ -217,12 +235,12 @@
                                     </div>
                                     <div class="col-xs-6 col-md-3">
                                         <div class="caption-photo one" data-animation="animated fadeInRight">
-                                            <img src="images/screen-7.jpg" alt="">
+                                            <img src="images/telkom11.jpg" alt="">
                                         </div>
                                     </div>
                                     <div class="col-xs-6 col-md-3">
                                         <div class="caption-photo two" data-animation="animated fadeInRight">
-                                            <img src="images/screen-2.jpg" alt="">
+                                            <img src="images/telkom12.jpg" alt="">
                                         </div>
                                     </div>
                                 </div>
@@ -231,10 +249,12 @@
                                 <div class="v-center">
                                     <div class="col-xs-12 col-md-6">
                                         <div class="caption-title" data-animation="animated fadeInUp">
-                                            <h2>Awesome design</h2>
+                                            <h2>Achievements</h2>
                                         </div>
                                         <div class="caption-desc" data-animation="animated fadeInUp">
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute</p>
+                                            <p>Telkom telah membuktikan eksistensinya dalam pengelolaan learning  yang ditunjukkan
+                                                melalui penghargaan dalam ajang bergengsi tahunan seperti Most Admired Knowledge
+                                                Enterprise (MAKE) Study Award dan Global  Council of Corporate Universities (GCCU).</p>
                                         </div>
                                         <div class="caption-button" data-animation="animated fadeInUp">
                                             <a href="#" class="button">Read more</a>
@@ -242,12 +262,12 @@
                                     </div>
                                     <div class="col-xs-6 col-md-3">
                                         <div class="caption-photo one" data-animation="animated fadeInRight">
-                                            <img src="images/screen-3.jpg" alt="">
+                                            <img src="images/telkom13.jpg" alt="">
                                         </div>
                                     </div>
                                     <div class="col-xs-6 col-md-3">
                                         <div class="caption-photo two" data-animation="animated fadeInRight">
-                                            <img src="images/screen-4.jpg" alt="">
+                                            <img src="images/telkom14.jpg" alt="">
                                         </div>
                                     </div>
                                 </div>
@@ -256,16 +276,16 @@
                         <!-- Indicators -->
                         <ol class="carousel-indicators caption-indector">
                             <li data-target="#caption_slide" data-slide-to="0" class="active">
-                                <strong>Lorem ipsum </strong>consectetur adipisicing elit.
+                                <strong>Leadership Training </strong>Center of Excellence
                             </li>
                             <li data-target="#caption_slide" data-slide-to="1">
-                                <strong>Lorem ipsum </strong>consectetur adipisicing elit.
+                                <strong>Digital Learning </strong>Center of Excellence
                             </li>
                             <li data-target="#caption_slide" data-slide-to="2">
-                                <strong>Lorem ipsum </strong>consectetur adipisicing elit.
+                                <strong>Business Recommendation </strong>Center of Excellence
                             </li>
                             <li data-target="#caption_slide" data-slide-to="3">
-                                <strong>Lorem ipsum </strong>consectetur adipisicing elit.
+                                <strong>Achievements </strong>Center of Excellence
                             </li>
                         </ol>
                     </div>
@@ -290,7 +310,7 @@
                 <div class="col-xs-12 col-sm-6 col-md-4">
                     <div class="box">
                         <div class="box-icon">
-                            <img src="images/portfolio-icon-1.png" alt="">
+                            <img src="images/telkom16.jpg" alt="">
                         </div>
                         <h3>Creative Design</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque quas nulla est adipisci,</p>
@@ -299,7 +319,7 @@
                 <div class="col-xs-12 col-sm-6 col-md-4">
                     <div class="box">
                         <div class="box-icon">
-                            <img src="images/portfolio-icon-2.png" alt="">
+                            <img src="images/telkom17.jpg" alt="">
                         </div>
                         <h3>Unlimited Features</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque quas nulla est adipisci,</p>
@@ -308,7 +328,7 @@
                 <div class="col-xs-12 col-sm-6 col-md-4">
                     <div class="box">
                         <div class="box-icon">
-                            <img src="images/portfolio-icon-3.png" alt="">
+                            <img src="images/telkom18.jpg" alt="">
                         </div>
                         <h3>Full Free Chat</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque quas nulla est adipisci,</p>
@@ -317,7 +337,7 @@
                 <div class="col-xs-12 col-sm-6 col-md-4">
                     <div class="box">
                         <div class="box-icon">
-                            <img src="images/portfolio-icon-4.png" alt="">
+                            <img src="images/telkom19.jpg" alt="">
                         </div>
                         <h3>Retina ready</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque quas nulla est adipisci,</p>
@@ -326,7 +346,7 @@
                 <div class="col-xs-12 col-sm-6 col-md-4">
                     <div class="box">
                         <div class="box-icon">
-                            <img src="images/portfolio-icon-5.png" alt="">
+                            <img src="images/telkom2.jpg" alt="">
                         </div>
                         <h3>High Resolution</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque quas nulla est adipisci,</p>
@@ -335,7 +355,7 @@
                 <div class="col-xs-12 col-sm-6 col-md-4">
                     <div class="box">
                         <div class="box-icon">
-                            <img src="images/portfolio-icon-6.png" alt="">
+                            <img src="images/telkom21.jpg" alt="">
                         </div>
                         <h3>Clean Codes</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque quas nulla est adipisci,</p>
@@ -360,42 +380,42 @@
                     <div class="testimonials">
                         <div class="testimonial">
                             <div class="testimonial-photo">
-                                <img src="images/avatar-small-1.png" alt="">
+                                <img src="images/telkom7.jpg" alt="">
                             </div>
                             <h3>AR Rahman</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel vero dolore officiis, velit id libero illum harum hic magni, quae repellendus adipisci possimus saepe nostrum doloribus repudiandae asperiores commodi voluptate.</p>
                         </div>
                         <div class="testimonial">
                             <div class="testimonial-photo">
-                                <img src="images/avatar-small-2.png" alt="">
+                                <img src="images/telkom8.jpg" alt="">
                             </div>
                             <h3>AR Rahman</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel vero dolore officiis, velit id libero illum harum hic magni, quae repellendus adipisci possimus saepe nostrum doloribus repudiandae asperiores commodi voluptate.</p>
                         </div>
                         <div class="testimonial">
                             <div class="testimonial-photo">
-                                <img src="images/avatar-small-3.png" alt="">
+                                <img src="images/telkom13.jpg" alt="">
                             </div>
                             <h3>AR Rahman</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel vero dolore officiis, velit id libero illum harum hic magni, quae repellendus adipisci possimus saepe nostrum doloribus repudiandae asperiores commodi voluptate.</p>
                         </div>
                         <div class="testimonial">
                             <div class="testimonial-photo">
-                                <img src="images/avatar-small-4.png" alt="">
+                                <img src="images/telkom7.jpg" alt="">
                             </div>
                             <h3>AR Rahman</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel vero dolore officiis, velit id libero illum harum hic magni, quae repellendus adipisci possimus saepe nostrum doloribus repudiandae asperiores commodi voluptate.</p>
                         </div>
                         <div class="testimonial">
                             <div class="testimonial-photo">
-                                <img src="images/avatar-small-5.png" alt="">
+                                <img src="images/telkom8.jpg" alt="">
                             </div>
                             <h3>AR Rahman</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel vero dolore officiis, velit id libero illum harum hic magni, quae repellendus adipisci possimus saepe nostrum doloribus repudiandae asperiores commodi voluptate.</p>
                         </div>
                         <div class="testimonial">
                             <div class="testimonial-photo">
-                                <img src="images/avatar-small-6.png" alt="">
+                                <img src="images/telkom13.jpg" alt="">
                             </div>
                             <h3>AR Rahman</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel vero dolore officiis, velit id libero illum harum hic magni, quae repellendus adipisci possimus saepe nostrum doloribus repudiandae asperiores commodi voluptate.</p>
@@ -407,7 +427,9 @@
     </section>
 
 
-<footer class="footer-area relative sky-bg" id="register">
+
+    
+    <footer class="footer-area relative sky-bg" id="register">
         <div class="absolute footer-bg"></div>
         <div class="footer-top">
             <div class="container">
@@ -560,11 +582,10 @@
                                     <input type="checkbox" aria-label="...">
                                     <label for="gender">Semua data yang telah disi sesuai dengan data dan ketentuan yang berlaku</label>
                                 </div>                                   
-
-                                
-                            </div>
                             <!-- <textarea name="message" id="form-message" name="form-message" rows="5" class="form-control" placeholder="Your message" required="required"></textarea> -->
-                            <button type="sibmit" class="button">Submit</button>
+                            <button type="sibmit" class="btn btn-success">Registrasi</button>
+                            <button type="sibmit" class="btn btn-info">Hapus</button>
+                            <button type="sibmit" class="btn btn-warning">Batal</button>
                         </form>
                     </div>
                 </div>
@@ -587,19 +608,21 @@
         </div>
     </footer>
 
+
+
     <section class="section-padding gray-bg" id="blog-page">
         <div class="container">
             <div class="row">
                 <div class="col-xs-12 col-sm-4">
                     <div class="single-blog">
                         <div class="blog-photo">
-                            <img src="images/small1.jpg" alt="">
+                            <img src="images/telkom16.jpg" alt="">
                         </div>
                         <div class="blog-content">
-                            <h3><a href="#">Beautiful Place for your Great Journey</a></h3>
+                            <h3><a href="#">Kegiatan Tahunan Telkom CorpU</a></h3>
                             <ul class="blog-meta">
                                 <li><span class="ti-user"></span> <a href="#">Admin</a></li>
-                                <li><span class="ti-calendar"></span> <a href="#">Feb 01, 2017</a></li>
+                                <li><span class="ti-calendar"></span> <a href="#">Oktober 10, 2018</a></li>
                             </ul>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit nemo eaque expedita aliquid dolorem repellat perferendis, facilis aut fugit, impedit.</p>
                         </div>
@@ -608,13 +631,13 @@
                 <div class="col-xs-12 col-sm-4">
                     <div class="single-blog">
                         <div class="blog-photo">
-                            <img src="images/small2.jpg" alt="">
+                            <img src="images/telkom17.jpg" alt="">
                         </div>
                         <div class="blog-content">
-                            <h3><a href="#">Beautiful Place for your Great Journey</a></h3>
+                            <h3><a href="#">Kegiatan Tahunan Telkom CorpU</a></h3>
                             <ul class="blog-meta">
                                 <li><span class="ti-user"></span> <a href="#">Admin</a></li>
-                                <li><span class="ti-calendar"></span> <a href="#">Feb 01, 2017</a></li>
+                                <li><span class="ti-calendar"></span> <a href="#">Oktober 10, 2018</a></li>
                             </ul>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit nemo eaque expedita aliquid dolorem repellat perferendis, facilis aut fugit, impedit.</p>
                         </div>
@@ -623,13 +646,13 @@
                 <div class="col-xs-12 col-sm-4">
                     <div class="single-blog">
                         <div class="blog-photo">
-                            <img src="images/small3.jpg" alt="">
+                            <img src="images/telkom18.jpg" alt="">
                         </div>
                         <div class="blog-content">
-                            <h3><a href="#">Beautiful Place for your Great Journey</a></h3>
+                            <h3><a href="#">Kegiatan Tahunan Telkom CorpU</a></h3>
                             <ul class="blog-meta">
                                 <li><span class="ti-user"></span> <a href="#">Admin</a></li>
-                                <li><span class="ti-calendar"></span> <a href="#">Feb 01, 2017</a></li>
+                                <li><span class="ti-calendar"></span> <a href="#">Oktober 10, 2018</a></li>
                             </ul>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit nemo eaque expedita aliquid dolorem repellat perferendis, facilis aut fugit, impedit.</p>
                         </div>
