@@ -64,8 +64,8 @@
                     <li><a href="#blog-page">Galery</a></li>
                     <li><a href="/kelolaregistrasi">Pendaftaran</a></li>
                     <li><a href="/home">Contact</a></li>
-                    <li><a href="/akun">Cek Nilai</a></li>
-                    <li><a href="/master">Login</a></li>
+                    <li><a href="/kelolanilai">Kelola Nilai</a></li>
+                    <li><a href="/master">Logout</a></li>
                 </ul>
             </nav>
         </div>

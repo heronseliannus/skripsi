@@ -14,26 +14,27 @@ Ajax Contact Form
 (function ($, window, document, undefined) {
     'use strict';
 
-    // var $form = $('#registration-form');
+    var $form = $('#kelolaregistrasi-form');
 
-    $('#registration-form').click(function (e) {
+    $form.submit(function (e) {
         // remove the error class
-        // $('.form-group').removeClass('has-error');
-        // $('.help-block').remove();
+        $('.form-group').removeClass('has-error');
+        $('.help-block').remove();
 
         // get the form data
         var formData = {
-            'first_name' : $('input[name="form-firstname"]').val(),
-            'last_name' : $('input[name="form-lastname"]').val(),
+            'firstname' : $('input[name="form-firstname"]').val(),
+            'lastname' : $('input[name="form-lastname"]').val(),
             'nik' : $('input[name="form-nik"]').val(),
-            'phone' : $('input[name="form-phone-number"]').val(),
-            'photo': document.getElementById('select-photo').files[0],
+            'phone' : $('textarea[name="form-phone-number"]').val(),
+            'photo': $('select-photo').val(),
             'password' : $('input[name="form-password"]').val(),
-            'address' : $('#form-address').val(),
+            'address' : $('textarea[name="form-address"]').val(),
             'kota' : $('#select-city').val(),
             'provinsi': $('#select-state').val(),
-            'tgl_lahir': $('#date').val() + '-' + $('#month').val() + '-' + $('#form-date-year').val(),
-            'email' : $('#form-user-email').val(),              
+            'tgl_lahir': $('#select-date'),
+            'email' : $('textarea[name="form-user-email"]').val(),
+            'email' : $('textarea[name="form-re-email"]').val(),               
         };
         console.log("FORM DATa", formData)
         // process the form
@@ -43,7 +44,6 @@ Ajax Contact Form
             data : formData,
             dataType : 'json',
             encode : true,
-            processData: false,
             headers: {
                 'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
               }
@@ -76,9 +76,7 @@ Ajax Contact Form
             }
         }).fail(function (data) {
             // for debug
-            console.log("failed", data)
-
-
+            console.log(data)
         });
 
         e.preventDefault();

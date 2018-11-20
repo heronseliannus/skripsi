@@ -64,7 +64,7 @@
                     <li><a href="#blog-page">Galery</a></li>
                     <li><a href="#register">Pendaftaran</a></li>
                     <li><a href="#contact-page">Contact</a></li>
-                    <li><a href="/akun">Cek Nilai</a></li>
+                    <li><a href="/nilai">Cek Nilai</a></li>
                     <li><a href="/master">Login</a></li>
                 </ul>
             </nav>
@@ -73,7 +73,7 @@
     <!--Mainmenu-area/-->
 
 @yield('content')
-    <footer class="footer-area relative sky-bg" id="akun">
+    <footer class="footer-area relative sky-bg" id="loginuser-form">
         <div class="absolute footer-bg"></div>
         <div class="footer-top">
             <div class="container">

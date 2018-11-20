@@ -8,6 +8,7 @@
     <meta name="keywords" content="HTML,CSS,XML,JavaScript">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
     <!-- Title -->
     <title>Telkom CorpU</title>
     <!-- Place favicon.ico in the root directory -->
@@ -63,7 +64,7 @@
                     <li><a href="#blog-page">Galery</a></li>
                     <li><a href="#register">Pendaftaran</a></li>
                     <li><a href="#contact-page">Contact</a></li>
-                    <li><a href="/akun">Cek Nilai</a></li>
+                    <li><a href="/nilai">Cek Nilai</a></li>
                     <li><a href="/login">Login</a></li>
                 </ul>
             </nav>
@@ -448,15 +449,15 @@
                                 <div class="side-icon">
                                     <img src="images/location-arrow.png" alt="">
                                 </div>
-                                <p><strong>Address: </strong> Box 564, Disneyland <br />USA</p>
+                                <p><strong>Alamat: </strong>Jl. Gegerkalong Hilir No. 47 Kota Bandung, Jawab Barat <br />Indonesia</p>
                             </div>
                             <div class="side-icon-box">
                                 <div class="side-icon">
                                     <img src="images/phone-arrow.png" alt="">
                                 </div>
                                 <p><strong>Telephone: </strong>
-                                    <a href="callto:8801812726495">+8801812726495</a> <br />
-                                    <a href="callto:8801687420471">+8801687420471</a>
+                                    <a href="callto:8801812726495">(022) 2016907</a> <br />
+                                    <a href="callto:8801687420471">(022) 2017204</a>
                                 </p>
                             </div>
                             <div class="side-icon-box">
@@ -464,28 +465,30 @@
                                     <img src="images/mail-arrow.png" alt="">
                                 </div>
                                 <p><strong>E-mail: </strong>
-                                    <a href="mailto:youremail@example.com">youremail@example.com</a> <br />
+                                    <a href="mailto:youremail@example.com">corporate_comm@telkom.co.id</a> <br />
                                     <a href="mailto:youremail@example.com">example@mail.com</a>
                                 </p>
                             </div>
                         </address>
                     </div>
                     <div class="col-xs-12 col-md-8">
-                        <form action="process.php" id="contact-form" method="post" class="contact-form">
+                        <form  method="post" class="contact-form" enctype="multipart/form-data">
+                            @csrf
                             <div class="form-double">
-                                <input type="text" id="form-name" name="form-name" placeholder="First name" class="form-control" required="required">
-                                <input type="text" id="form-name" name="form-name" placeholder="Last name" class="form-control" required="required">
+                                <input type="text" id="form-firstname" name="form-firstname" placeholder="First name" class="form-control" required="required">
+                                <input type="text" id="form-lastname" name="form-lastname" placeholder="Last name" class="form-control" required="required">
                             </div>
-                            <input type="password" id="form-subject" name="form-subject" class="form-control" placeholder="Password">
-                            <input type="text" id="form-subject" name="form-subject" class="form-control" placeholder="NIK">
+                            <input type="password" id="form-password" name="form-password" class="form-control" placeholder="Password">
+                            <input type="text" id="form-nik" name="form-nik" class="form-control" placeholder="NIK">
                             <div class="form-double">
-                                <input type="email" id="form-email" name="form-email" class="form-control" placeholder="email" required="required">
-                                <input type="email" id="form-email" name="form-email" class="form-control" placeholder="Re-enter email" required="required">                                
+                                <input type="email" id="form-user-email" name="form-user-email" class="form-control" placeholder="email" required="required">
+                                <input type="email" id="form-re-email" name="form-re-email" class="form-control" placeholder="Re-enter email" required="required">                                
                             </div>
-                            <input type="text" id="form-subject" name="form-subject" class="form-control" placeholder="Phone Number">
-                            <input type="text" id="form-subject" name="form-subject" class="form-control" placeholder="Address">
+
+                            <input type="text" id="form-phone-num" name="form-phone-number" class="form-control" placeholder="Phone Number">
+                            <input type="text" id="form-address" name="form-address" class="form-control" placeholder="Address">
                             <div class="form-group">
-                                <select class="form-control" id="exampleFormControlSelect1">
+                                <select class="form-control" id="select-city">
                                 <option>Bandung</option>
                                 <option>Jakarta</option>
                                 <option>Malang</option>
@@ -494,7 +497,7 @@
                                 </select>
                             </div>
                             <div class="form-group">
-                                <select class="form-control" id="exampleFormControlSelect1">
+                                <select class="form-control" id="select-state">
                                 <option>Jawa Barat</option>
                                 <option>DKI Jakarta</option>
                                 <option>Jawa Tengah</option>
@@ -502,8 +505,8 @@
                                 </select>
                             </div>                  
                             <div class="form-group">
-                                <label for="exampleFormControlSelect1">Upload Photo</label>
-                                <input type="file" value="image" />
+                                <label for="upload-photo">Upload Photo</label>
+                                <input type="file" id="select-photo" value="image" />
                             </div>
                             <div class="form-group">
                                 <label for="gender">Pria</label>
@@ -511,10 +514,10 @@
                                 <label for="gender">Wanita</label>
                                 <input type="checkbox" aria-label="...">
                             </div>   
-                            <label for="exampleFormControlSelect1">Date of Birth</label>
+                            <label for="date-of-birth">Date of Birth</label>
                             <div class="row">
                                 <div class="col-md-2">
-                                    <select class="form-control" id="exampleFormControlSelect1">
+                                    <select class="form-control" id="date">
                                         <option>01</option>
                                         <option>02</option>
                                         <option>03</option>
@@ -549,7 +552,7 @@
                                     </select>                                
                                 </div>
                                 <div class="col-md-4">
-                                    <select class="form-control" id="exampleFormControlSelect1">
+                                    <select class="form-control" id="month">
                                         <option>Januari</option>
                                         <option>Februari</option>
                                         <option>Maret</option>
@@ -565,7 +568,7 @@
                                     </select>                                
                                 </div>
                                 <div class="col-md-2">
-                                    <input type="text" id="form-name" name="form-name" placeholder="e.g 1999" class="form-control" required="required">                              
+                                    <input type="text" id="form-date-year" name="form-date-year" placeholder="e.g 1999" class="form-control" required="required">                              
                                 </div>
                                 </div>
                                 <div class="form-group">
@@ -582,10 +585,11 @@
                                     <input type="checkbox" aria-label="...">
                                     <label for="gender">Semua data yang telah disi sesuai dengan data dan ketentuan yang berlaku</label>
                                 </div>                                   
+                                                       
                             <!-- <textarea name="message" id="form-message" name="form-message" rows="5" class="form-control" placeholder="Your message" required="required"></textarea> -->
-                            <button type="sibmit" class="btn btn-success">Registrasi</button>
-                            <button type="sibmit" class="btn btn-info">Hapus</button>
-                            <button type="sibmit" class="btn btn-warning">Batal</button>
+                            <button type="submit" id="registration-form" class="btn btn-success">Registrasi</button>
+                            <button type="submit" class="btn btn-info">Hapus</button>
+                            <button type="submit" class="btn btn-warning">Batal</button>
                         </form>
                     </div>
                 </div>
@@ -683,15 +687,15 @@
                                 <div class="side-icon">
                                     <img src="images/location-arrow.png" alt="">
                                 </div>
-                                <p><strong>Address: </strong> Box 564, Disneyland <br />USA</p>
+                                <p><strong>Alamat: </strong>Jl. Gegerkalong Hilir No. 47 Kota Bandung, Jawa Barat<br />Indonesia</p>
                             </div>
                             <div class="side-icon-box">
                                 <div class="side-icon">
                                     <img src="images/phone-arrow.png" alt="">
                                 </div>
                                 <p><strong>Telephone: </strong>
-                                    <a href="callto:8801812726495">+8801812726495</a> <br />
-                                    <a href="callto:8801687420471">+8801687420471</a>
+                                    <a href="callto:8801812726495">(022) 2016907</a> <br />
+                                    <a href="callto:8801687420471">(022) 2017204</a>
                                 </p>
                             </div>
                             <div class="side-icon-box">
@@ -699,16 +703,16 @@
                                     <img src="images/mail-arrow.png" alt="">
                                 </div>
                                 <p><strong>E-mail: </strong>
-                                    <a href="mailto:youremail@example.com">youremail@example.com</a> <br />
+                                    <a href="mailto:youremail@example.com">corporate_comm@telkom.co.id</a> <br />
                                     <a href="mailto:youremail@example.com">example@mail.com</a>
                                 </p>
                             </div>
                         </address>
                     </div>
                     <div class="col-xs-12 col-md-8">
-                        <form action="process.php" id="contact-form" method="post" class="contact-form">
+                        <form action="/test" id="contact-us-form" method="post" class="contact-form">
                             <div class="form-double">
-                                <input type="text" id="form-name" name="form-name" placeholder="Your name" class="form-control" required="required">
+                                <input type="text" id="form-contact-name" name="form-name" placeholder="Your name" class="form-control" required="required">
                                 <input type="email" id="form-email" name="form-email" class="form-control" placeholder="E-mail address" required="required">
                             </div>
                             <input type="text" id="form-subject" name="form-subject" class="form-control" placeholder="Message topic">
@@ -762,6 +766,7 @@
     <script src="{{ asset('js/scrollUp.min.js')}}"></script>
     <script src="{{ asset('js/magnific-popup.min.js')}}"></script>
     <script src="{{ asset('js/wow.min.js')}}"></script>
+    <script src="{{ asset('js/testing.js')}}"></script>
     <!--Main-active-JS-->
     <script src="{{ asset('js/main.js')}}"></script>
 </body>

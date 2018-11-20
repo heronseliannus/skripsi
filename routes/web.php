@@ -14,11 +14,11 @@
 Route::get('/', function () {
     return view('home');
 });
-
+/*
 Route::get('akun', function() {
   return view('akun');
 });
-
+*/
 Route::get('/pendaftaran', function() {
   return view('pendaftaran');
 });
@@ -36,3 +36,17 @@ Route::get('/tampilan', function()
 {
   return view('layout/tampilan');
 });
+Route::get('/kelolanilai', function()
+{
+  return view('admin/kelolanilai');
+});
+Route::get('/nilai', function()
+{
+  return view('user/nilai');
+});
+
+Route::get('/users', 'Users\UserController@index');
+
+Route::post('/users', 'Users\UserController@store');
+
+Route::post('/test', 'TestingController@store');

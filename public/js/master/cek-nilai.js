@@ -14,36 +14,26 @@ Ajax Contact Form
 (function ($, window, document, undefined) {
     'use strict';
 
-    // var $form = $('#registration-form');
+    var $form = $('#loginuser-form');
 
-    $('#registration-form').click(function (e) {
+    $form.submit(function (e) {
         // remove the error class
-        // $('.form-group').removeClass('has-error');
-        // $('.help-block').remove();
+        $('.form-group').removeClass('has-error');
+        $('.help-block').remove();
 
         // get the form data
         var formData = {
-            'first_name' : $('input[name="form-firstname"]').val(),
-            'last_name' : $('input[name="form-lastname"]').val(),
             'nik' : $('input[name="form-nik"]').val(),
-            'phone' : $('input[name="form-phone-number"]').val(),
-            'photo': document.getElementById('select-photo').files[0],
-            'password' : $('input[name="form-password"]').val(),
-            'address' : $('#form-address').val(),
-            'kota' : $('#select-city').val(),
-            'provinsi': $('#select-state').val(),
-            'tgl_lahir': $('#date').val() + '-' + $('#month').val() + '-' + $('#form-date-year').val(),
-            'email' : $('#form-user-email').val(),              
+            'password' : $('input[name="form-password"]').val(), 
         };
         console.log("FORM DATa", formData)
         // process the form
         $.ajax({
             type : 'POST',
-            url  : '/users',
+            url  : '/akun',
             data : formData,
             dataType : 'json',
             encode : true,
-            processData: false,
             headers: {
                 'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
               }
@@ -76,9 +66,7 @@ Ajax Contact Form
             }
         }).fail(function (data) {
             // for debug
-            console.log("failed", data)
-
-
+            console.log(data)
         });
 
         e.preventDefault();

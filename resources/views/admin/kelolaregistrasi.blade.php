@@ -4,7 +4,7 @@
 
 @section('content')
 
-<footer class="footer-area relative sky-bg" id="home">
+<footer class="footer-area relative sky-bg" id="kelolaregistrasi-form">
         <div class="absolute footer-bg"></div>
         <div class="footer-top">
             <div class="container">
@@ -23,15 +23,15 @@
                                 <div class="side-icon">
                                     <img src="images/location-arrow.png" alt="">
                                 </div>
-                                <p><strong>Address: </strong> Box 564, Disneyland <br />USA</p>
+                                <p><strong>Alamat: </strong> Jl. Gegerkalong Hilir No. 47 Kota Bandung, Jawab Barat <br />Indonesia</p>
                             </div>
                             <div class="side-icon-box">
                                 <div class="side-icon">
                                     <img src="images/phone-arrow.png" alt="">
                                 </div>
                                 <p><strong>Telephone: </strong>
-                                    <a href="callto:8801812726495">+8801812726495</a> <br />
-                                    <a href="callto:8801687420471">+8801687420471</a>
+                                    <a href="callto:8801812726495">(022) 2016907</a> <br />
+                                    <a href="callto:8801687420471">(022) 2017204</a>
                                 </p>
                             </div>
                             <div class="side-icon-box">
@@ -39,7 +39,7 @@
                                     <img src="images/mail-arrow.png" alt="">
                                 </div>
                                 <p><strong>E-mail: </strong>
-                                    <a href="mailto:youremail@example.com">youremail@example.com</a> <br />
+                                    <a href="mailto:youremail@example.com">corporate_comm@telkom.co.id</a> <br />
                                     <a href="mailto:youremail@example.com">example@mail.com</a>
                                 </p>
                             </div>
@@ -158,9 +158,9 @@
                                     <label for="gender">Semua data yang telah disi sesuai dengan data dan ketentuan yang berlaku</label>
                                 </div>                                   
                             <!-- <textarea name="message" id="form-message" name="form-message" rows="5" class="form-control" placeholder="Your message" required="required"></textarea> -->
-                            <button type="sibmit" class="btn btn-success">Tambah</button>
-                            <button type="sibmit" class="btn btn-info">Hapus</button>
-                            <button type="sibmit" class="btn btn-warning">Batal</button>
+                            <button type="submit" class="btn btn-success">Tambah</button>
+                            <button type="submit" class="btn btn-info">Hapus</button>
+                            <button type="submit" class="btn btn-warning">Batal</button>
                         </form>
                     </div>
                 </div>

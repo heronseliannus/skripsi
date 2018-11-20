@@ -14,19 +14,14 @@ class UserTableSeeder extends Seeder
     public function run()
     {
         $roleId = DB::table('roles')->pluck('id')[0];
-        DB::table('users')->insert([
+        DB::table('nilai')->insert([
             'first_name' => 'hero',
             'last_name' => 'selianus', 
-            'nik' => '980076',
-            'phone' =>'0852337689',
-            'photo'=> 'https://jpg',
-            'role_id' => $roleId,
-            'password' => Hash::make('secret'), 
-            'address' => 'Jalan Picung 107, Sukasari',
-            'kota' => 'Bandung',
-            'provinsi' => 'Jawa Barat',
-            'tgl_lahir' =>  Carbon::parse('10-07-1990'),
-            'email' => 'heronselianus1795@gmail.com',
+            'nilai1' => '100',
+            'nilai2' => '100',
+            'nilai3' => '100',
+            'nilai3' => '100',
+            'nilai4' => '100',
             'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
             'updated_at' => Carbon::now()->format('Y-m-d H:i:s'),
         ]);
