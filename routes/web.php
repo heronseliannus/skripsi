@@ -40,7 +40,7 @@ Route::get('/tampilan', function()
 });
 Route::get('/kelolanilai', function()
 {
-  return view('Admin/kelolanilai');
+  return view('admin/kelolanilai');
 });
 
 
@@ -50,4 +50,7 @@ Route::post('/users', 'Users\UserController@store');
 
 Route::post('/testing', 'TestingController@store');
 
-Route::post('/Admin', 'KelolanilaiController@store');
+
+Route::get('/admin', 'Admins\KelolanilaiController@index');
+
+Route::post('/admin', 'Admins\KelolanilaiController@store');

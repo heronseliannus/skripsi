@@ -16,13 +16,13 @@ Ajax Contact Form
 
     var $form = $('#kelolanilai-form');
 
-    $form.submit(function (a) {
+    $form.submit(function (e) {
         // remove the error class
         $('.form-group').removeClass('has-error');
         $('.help-block').remove();
 
         // get the form data
-        var formNilai = {
+        var formData = {
             'firstname' : $('input[name="form-firstname"]').val(),
             'lastname' : $('input[name="form-lastname"]').val(),
             'nilai1' : $('input[name="form-nilai1"]').val(),
@@ -31,21 +31,21 @@ Ajax Contact Form
             'nilai4' : $('input[name="form-nilai4"]').val(),
         };
         
-        console.log("FORM Nilai", formNilai)
+        console.log("FORM DATa", formData)
         // process the form
         $.ajax({
             type : 'POST',
-            url  : '/nilais',
-            data : formNilai,
+            url  : '/admin',
+            data : formData,
             dataType : 'json',
             encode : true,
             headers: {
                 'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
               }
-        }).done(function (nilai) {
+        }).done(function (data) {
             // handle errors
             if (!data.success) {
-                console.log("nilai", nilai)
+                console.log("data", data)
                 // if (data.errors.name) {
                 //     $('#name-field').addClass('has-error');
                 //     $('#name-field').find('.col-lg-10').append('<span class="help-block">' + data.errors.name + '</span>');
@@ -69,9 +69,9 @@ Ajax Contact Form
                 // display success message
                 $form.html('<div class="alert alert-success">' + nilai.message + '</div>');
             }
-        }).fail(function (nilai) {
+        }).fail(function (data) {
             // for debug
-            console.log(nilai)
+            console.log("failed" data)
         });
 
         e.preventDefault();

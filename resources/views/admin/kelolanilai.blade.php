@@ -46,7 +46,7 @@
                         </address>
                     </div>
                     <div class="col-xs-12 col-md-8">
-                    <form action="/nilais" class="contact-form" method="post" id="kelolanilai-form">
+                    <form action="/admins" class="kelola-nilai-form" method="post" id="kelolanilai-form">
                     @csrf
                             <div class="form-double">
                                 <input type="text" id="form-firstname" name="form-firstname" placeholder="First name" class="form-control" required="required">
