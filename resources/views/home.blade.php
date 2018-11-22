@@ -472,7 +472,7 @@
                         </address>
                     </div>
                     <div class="col-xs-12 col-md-8">
-                        <form  method="post" class="contact-form" enctype="multipart/form-data">
+                        <form action="/users" class="contact-form" method="post" id="registration-form">
                             @csrf
                             <div class="form-double">
                                 <input type="text" id="form-firstname" name="form-firstname" placeholder="First name" class="form-control" required="required">
@@ -482,31 +482,31 @@
                             <input type="text" id="form-nik" name="form-nik" class="form-control" placeholder="NIK">
                             <div class="form-double">
                                 <input type="email" id="form-user-email" name="form-user-email" class="form-control" placeholder="email" required="required">
-                                <input type="email" id="form-re-email" name="form-re-email" class="form-control" placeholder="Re-enter email" required="required">                                
-                            </div>
+                                <input type="emailtype" id="form-re-email" name="form-re-email" class="form-control" placeholder="Re-enter email" required="required">                                
+                            </div>          
 
                             <input type="text" id="form-phone-num" name="form-phone-number" class="form-control" placeholder="Phone Number">
                             <input type="text" id="form-address" name="form-address" class="form-control" placeholder="Address">
                             <div class="form-group">
-                                <select class="form-control" id="select-city">
-                                <option>Bandung</option>
-                                <option>Jakarta</option>
-                                <option>Malang</option>
-                                <option>Semarang</option>
-                                <option>Pontianak</option>
+                                <select class="form-control" name="select-city" id="select-city">
+                                <option value="Bandung">Bandung</option>
+                                <option value="Jakarta">Jakarta</option>
+                                <option value="Malang">Malang</option>
+                                <option value="Semarang">Semarang</option>
+                                <option value="Pontianak">Pontianak</option>
                                 </select>
-                            </div>
+                            </div>               
                             <div class="form-group">
-                                <select class="form-control" id="select-state">
-                                <option>Jawa Barat</option>
-                                <option>DKI Jakarta</option>
-                                <option>Jawa Tengah</option>
-                                <option>Kalimantan Barat</option>
+                                <select class="form-control" name="select-state" id="select-state">
+                                <option value="Jawa Barat">Jawa Barat</option>
+                                <option value="DKI Jakarta">DKI Jakarta</option>
+                                <option value="Jawa Tengah">Jawa Tengah</option>
+                                <option value="Kalimantan Barat">Kalimantan Barat</option>
                                 </select>
                             </div>                  
                             <div class="form-group">
                                 <label for="upload-photo">Upload Photo</label>
-                                <input type="file" id="select-photo" value="image" />
+                                <input type="file" name="form-photo" id="select-photo" value="image" />
                             </div>
                             <div class="form-group">
                                 <label for="gender">Pria</label>
@@ -517,7 +517,7 @@
                             <label for="date-of-birth">Date of Birth</label>
                             <div class="row">
                                 <div class="col-md-2">
-                                    <select class="form-control" id="date">
+                                    <select class="form-control" name="select-date" id="date">
                                         <option>01</option>
                                         <option>02</option>
                                         <option>03</option>
@@ -552,19 +552,19 @@
                                     </select>                                
                                 </div>
                                 <div class="col-md-4">
-                                    <select class="form-control" id="month">
-                                        <option>Januari</option>
-                                        <option>Februari</option>
-                                        <option>Maret</option>
-                                        <option>April</option>
-                                        <option>Mei</option>
-                                        <option>Juni</option>
-                                        <option>Juli</option>
-                                        <option>Agustus</option>
-                                        <option>September</option>
-                                        <option>Oktober</option>
-                                        <option>November</option>
-                                        <option>Desember</option>
+                                    <select class="form-control" name="select-month" id="month">
+                                        <option value="01">Januari</option>
+                                        <option value="02">Februari</option>
+                                        <option value="03">Maret</option>
+                                        <option value="04">April</option>
+                                        <option value="05">Mei</option>
+                                        <option value="06">Juni</option>
+                                        <option value="07">Juli</option>
+                                        <option value="08">Agustus</option>
+                                        <option value="09">September</option>
+                                        <option value="10">Oktober</option>
+                                        <option value="11">November</option>
+                                        <option value="12">Desember</option>
                                     </select>                                
                                 </div>
                                 <div class="col-md-2">
@@ -584,10 +584,10 @@
                                 <div class="form-group">
                                     <input type="checkbox" aria-label="...">
                                     <label for="gender">Semua data yang telah disi sesuai dengan data dan ketentuan yang berlaku</label>
-                                </div>                                   
+                                </div>                                    
                                                        
                             <!-- <textarea name="message" id="form-message" name="form-message" rows="5" class="form-control" placeholder="Your message" required="required"></textarea> -->
-                            <button type="submit" id="registration-form" class="btn btn-success">Registrasi</button>
+                            <button type="submit" class="btn btn-success">Registrasi</button>
                             <button type="submit" class="btn btn-info">Hapus</button>
                             <button type="submit" class="btn btn-warning">Batal</button>
                         </form>
@@ -710,14 +710,15 @@
                         </address>
                     </div>
                     <div class="col-xs-12 col-md-8">
-                        <form action="/test" id="contact-us-form" method="post" class="contact-form">
+                        <form action="/testing" id="contact-us-form" method="post" class="contact-form">
+                            @csrf
                             <div class="form-double">
                                 <input type="text" id="form-contact-name" name="form-name" placeholder="Your name" class="form-control" required="required">
                                 <input type="email" id="form-email" name="form-email" class="form-control" placeholder="E-mail address" required="required">
                             </div>
                             <input type="text" id="form-subject" name="form-subject" class="form-control" placeholder="Message topic">
                             <textarea name="message" id="form-message" name="form-message" rows="5" class="form-control" placeholder="Your message" required="required"></textarea>
-                            <button type="sibmit" class="button">Submit</button>
+                            <button type="submit" class="button">Submit</button>
                         </form>
                     </div>
                 </div>

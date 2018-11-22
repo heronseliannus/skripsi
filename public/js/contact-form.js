@@ -14,26 +14,26 @@ Ajax Contact Form
 (function ($, window, document, undefined) {
     'use strict';
 
-    // var $form = $('#registration-form');
+    var $form = $('#registration-form');
 
-    $('#registration-form').click(function (e) {
+    $('#registration-form').submit(function (e) {
         // remove the error class
         // $('.form-group').removeClass('has-error');
         // $('.help-block').remove();
 
         // get the form data
         var formData = {
-            'first_name' : $('input[name="form-firstname"]').val(),
-            'last_name' : $('input[name="form-lastname"]').val(),
+            'firstname' : $('input[name="form-firstname"]').val(),
+            'lastname' : $('input[name="form-lastname"]').val(),
             'nik' : $('input[name="form-nik"]').val(),
             'phone' : $('input[name="form-phone-number"]').val(),
-            'photo': document.getElementById('select-photo').files[0],
+            'photo': document.getElementById('input[name="form-photo"]').files[0],
             'password' : $('input[name="form-password"]').val(),
-            'address' : $('#form-address').val(),
-            'kota' : $('#select-city').val(),
-            'provinsi': $('#select-state').val(),
-            'tgl_lahir': $('#date').val() + '-' + $('#month').val() + '-' + $('#form-date-year').val(),
-            'email' : $('#form-user-email').val(),              
+            'address' : $('input[name="form-address"]').val(),
+            'kota' : $('input[name="select-city"] option:selected').text(),
+            'provinsi': $('input[name="select-state"]').val(),
+            'tgl_lahir': $('input[name="select-date"] option:selected').text() + '-' + $('input[name="select-month]').val() + '-' + $('input[name="form-date-year"]').val(),
+            'email' : $('input[name="form-user-email"]').val(),              
         };
         console.log("FORM DATa", formData)
         // process the form
@@ -43,7 +43,6 @@ Ajax Contact Form
             data : formData,
             dataType : 'json',
             encode : true,
-            processData: false,
             headers: {
                 'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
               }

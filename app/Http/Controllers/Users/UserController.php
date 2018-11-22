@@ -4,6 +4,8 @@ namespace App\Http\Controllers\Users;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use Carbon\Carbon;
+
 use App\User;
 
 class UserController extends Controller
@@ -15,35 +17,32 @@ class UserController extends Controller
 
     public function store(Request $request)
     {
-        return $request->input('form-firstname');
+
         $photoName;
-        if($request->hasFile('photo')) {
-            $photoName = $request->photo->store('images');
+        if($request['photo']) {
+            $photoName = $request['photo']->store('images');
         } else {
             $photoName = "";
         }
 
         $user = new User;
 
-        $user->first_name = $request->input('first_name');
-        $user->last_name = $request->last_name;
-        $user->nik = $request->nik;
-        $user->phone = $request->phone;
+        $user->first_name = $request['form-firstname'];
+        $user->last_name = $request['form-lastname'];
+        $user->nik = $request['form-nik'];
+        $user->phone = $request['form-phone-number'];
         $user->photo = $photoName;
         $user->role_id = 2;
-        $user->password = $request->password;
-        $user->address = $request->address;
-        $user->kota = $request->kota;
-        $user->provinsi = $request->provinsi;
-        $user->tgl_lahir = $request->tgl_lahir;
-        $user->email = $request->email;
+        $user->password = $request['form-password'];
+        $user->address = $request['form-address'];
+        $user->city = $request['select-city'];
+        $user->state = $request['select-state'];
+        $user->birth_date = Carbon::parse($request['select-date'] . '-' . $request['select-month'] . '-' . $request['form-date-year']) ;
+        $user->email = $request['form-user-email'];
 
         $user->save();
 
-        $response = [
-            'status' => true,
-            'msg' => $user
-        ];
-        return response()->json($response);
+        return view('testing', compact('request'));
+
     }
 }

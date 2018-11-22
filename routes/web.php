@@ -1,5 +1,7 @@
 <?php
 
+use Illuminate\Http\Request;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -49,4 +51,4 @@ Route::get('/users', 'Users\UserController@index');
 
 Route::post('/users', 'Users\UserController@store');
 
-Route::post('/test', 'TestingController@store');
+Route::post('/testing', 'TestingController@store');

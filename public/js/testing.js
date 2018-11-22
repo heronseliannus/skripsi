@@ -14,9 +14,9 @@ Ajax Contact Form
 (function ($, window, document, undefined) {
     'use strict';
 
-    // var $form = $('#registration-form');
+    var $form =  $('#contact-us-form');
 
-    $('#contact-us-form').click(function (e) {
+    $form.submit(function (e) {
         // remove the error class
         // $('.form-group').removeClass('has-error');
         // $('.help-block').remove();
@@ -24,16 +24,18 @@ Ajax Contact Form
         // get the form data
         var formData = {
             'firstname' : $('#form-contact-name').val(),
+            'email': $('#form-email').val(),
+            'subject': $('#form-subject').val(),
+            'message': $('#form-message').val()
         };
         console.log("FORM DATa", formData)
         // process the form
         $.ajax({
             type : 'POST',
-            url  : '/test',
+            url  : '/testing',
             data : formData,
             dataType : 'json',
             encode : true,
-            processData: false,
             headers: {
                 'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
               }
