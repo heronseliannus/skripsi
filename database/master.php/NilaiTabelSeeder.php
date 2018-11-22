@@ -14,7 +14,7 @@ class UserTableSeeder extends Seeder
     public function run()
     {
         $roleId = DB::table('roles')->pluck('id')[0];
-        DB::table('nilai')->insert([
+        DB::table('nilais')->insert([
             'first_name' => 'hero',
             'last_name' => 'selianus', 
             'nilai1' => '100',

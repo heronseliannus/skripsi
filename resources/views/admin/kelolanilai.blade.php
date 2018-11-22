@@ -46,11 +46,11 @@
                         </address>
                     </div>
                     <div class="col-xs-12 col-md-8">
-                    <form  method="post" class="contact-form" enctype="multipart/form-nilai">
+                    <form action="/nilais" class="contact-form" method="post" id="kelolanilai-form">
                     @csrf
                             <div class="form-double">
-                                <input type="text" id="form-name" name="form-name" placeholder="First name" class="form-control" required="required">
-                                <input type="text" id="form-name" name="form-name" placeholder="Last name" class="form-control" required="required">
+                                <input type="text" id="form-firstname" name="form-firstname" placeholder="First name" class="form-control" required="required">
+                                <input type="text" id="form-lastname" name="form-lastname" placeholder="Last name" class="form-control" required="required">
                             </div>
                             <input type="text" id="form-nilai1" name="form-nilai1" class="form-control" placeholder="Nilai 1">
                             <input type="text" id="form-nilai2" name="form-nilai2" class="form-control" placeholder="Nilai 2">

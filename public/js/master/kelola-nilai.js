@@ -23,19 +23,19 @@ Ajax Contact Form
 
         // get the form data
         var formNilai = {
-            'first_name' : $('input[name="form-firstname"]').val(),
-            'last_name' : $('input[name="form-lastname"]').val(),
-            'nilai1' : $('textarea[name="form-nilai1"]').val(),
-            'nilai2' : $('textarea[name="form-nilai2"]').val(),
-            'nilai3' : $('textarea[name="form-nilai3"]').val(),
-            'nilai4' : $('textarea[name="form-nilai4"]').val(),
+            'firstname' : $('input[name="form-firstname"]').val(),
+            'lastname' : $('input[name="form-lastname"]').val(),
+            'nilai1' : $('input[name="form-nilai1"]').val(),
+            'nilai2' : $('input[name="form-nilai2"]').val(),
+            'nilai3' : $('input[name="form-nilai3"]').val(),
+            'nilai4' : $('input[name="form-nilai4"]').val(),
         };
         
         console.log("FORM Nilai", formNilai)
         // process the form
         $.ajax({
             type : 'POST',
-            url  : '/nilai',
+            url  : '/nilais',
             data : formNilai,
             dataType : 'json',
             encode : true,

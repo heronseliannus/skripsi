@@ -40,15 +40,14 @@ Route::get('/tampilan', function()
 });
 Route::get('/kelolanilai', function()
 {
-  return view('admin/kelolanilai');
+  return view('Admin/kelolanilai');
 });
-Route::get('/nilai', function()
-{
-  return view('user/nilai');
-});
+
 
 Route::get('/users', 'Users\UserController@index');
 
 Route::post('/users', 'Users\UserController@store');
 
 Route::post('/testing', 'TestingController@store');
+
+Route::post('/Admin', 'KelolanilaiController@store');

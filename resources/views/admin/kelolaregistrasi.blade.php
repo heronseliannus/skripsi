@@ -5,13 +5,13 @@
 @section('content')
 
 <footer class="footer-area relative sky-bg" id="kelolaregistrasi-form">
-        <div class="absolute footer-bg"></div>
+<div class="absolute footer-bg"></div>
         <div class="footer-top">
             <div class="container">
                 <div class="row">
                     <div class="col-xs-12 col-sm-6 col-sm-offset-3 text-center">
                         <div class="page-title">
-                            <h2>From Registrasi Admin</h2>
+                            <h2>Register</h2>
                             <p>Input Registrasi Peserta Pelatihan</p>
                         </div>
                     </div>
@@ -23,7 +23,7 @@
                                 <div class="side-icon">
                                     <img src="images/location-arrow.png" alt="">
                                 </div>
-                                <p><strong>Alamat: </strong> Jl. Gegerkalong Hilir No. 47 Kota Bandung, Jawab Barat <br />Indonesia</p>
+                                <p><strong>Alamat: </strong>Jl. Gegerkalong Hilir No. 47 Kota Bandung, Jawab Barat <br />Indonesia</p>
                             </div>
                             <div class="side-icon-box">
                                 <div class="side-icon">
@@ -46,39 +46,41 @@
                         </address>
                     </div>
                     <div class="col-xs-12 col-md-8">
-                        <form action="process.php" id="contact-form" method="post" class="contact-form">
+                        <form action="/users" class="contact-form" method="post" id="registration-form">
+                            @csrf
                             <div class="form-double">
-                                <input type="text" id="form-name" name="form-name" placeholder="First name" class="form-control" required="required">
-                                <input type="text" id="form-name" name="form-name" placeholder="Last name" class="form-control" required="required">
+                                <input type="text" id="form-firstname" name="form-firstname" placeholder="First name" class="form-control" required="required">
+                                <input type="text" id="form-lastname" name="form-lastname" placeholder="Last name" class="form-control" required="required">
                             </div>
-                            <input type="password" id="form-subject" name="form-subject" class="form-control" placeholder="Password">
-                            <input type="text" id="form-subject" name="form-subject" class="form-control" placeholder="NIK">
+                            <input type="password" id="form-password" name="form-password" class="form-control" placeholder="Password">
+                            <input type="text" id="form-nik" name="form-nik" class="form-control" placeholder="NIK">
                             <div class="form-double">
-                                <input type="email" id="form-email" name="form-email" class="form-control" placeholder="email" required="required">
-                                <input type="email" id="form-email" name="form-email" class="form-control" placeholder="Re-enter email" required="required">                                
-                            </div>
-                            <input type="text" id="form-subject" name="form-subject" class="form-control" placeholder="Phone Number">
-                            <input type="text" id="form-subject" name="form-subject" class="form-control" placeholder="Address">
+                                <input type="email" id="form-user-email" name="form-user-email" class="form-control" placeholder="email" required="required">
+                                <input type="emailtype" id="form-re-email" name="form-re-email" class="form-control" placeholder="Re-enter email" required="required">                                
+                            </div>          
+
+                            <input type="text" id="form-phone-num" name="form-phone-number" class="form-control" placeholder="Phone Number">
+                            <input type="text" id="form-address" name="form-address" class="form-control" placeholder="Address">
                             <div class="form-group">
-                                <select class="form-control" id="exampleFormControlSelect1">
-                                <option>Bandung</option>
-                                <option>Jakarta</option>
-                                <option>Malang</option>
-                                <option>Semarang</option>
-                                <option>Pontianak</option>
+                                <select class="form-control" name="select-city" id="select-city">
+                                <option value="Bandung">Bandung</option>
+                                <option value="Jakarta">Jakarta</option>
+                                <option value="Malang">Malang</option>
+                                <option value="Semarang">Semarang</option>
+                                <option value="Pontianak">Pontianak</option>
                                 </select>
-                            </div>
+                            </div>               
                             <div class="form-group">
-                                <select class="form-control" id="exampleFormControlSelect1">
-                                <option>Jawa Barat</option>
-                                <option>DKI Jakarta</option>
-                                <option>Jawa Tengah</option>
-                                <option>Kalimantan Barat</option>
+                                <select class="form-control" name="select-state" id="select-state">
+                                <option value="Jawa Barat">Jawa Barat</option>
+                                <option value="DKI Jakarta">DKI Jakarta</option>
+                                <option value="Jawa Tengah">Jawa Tengah</option>
+                                <option value="Kalimantan Barat">Kalimantan Barat</option>
                                 </select>
                             </div>                  
                             <div class="form-group">
-                                <label for="exampleFormControlSelect1">Upload Photo</label>
-                                <input type="file" value="image" />
+                                <label for="upload-photo">Upload Photo</label>
+                                <input type="file" name="form-photo" id="select-photo" value="image" />
                             </div>
                             <div class="form-group">
                                 <label for="gender">Pria</label>
@@ -86,10 +88,10 @@
                                 <label for="gender">Wanita</label>
                                 <input type="checkbox" aria-label="...">
                             </div>   
-                            <label for="exampleFormControlSelect1">Date of Birth</label>
+                            <label for="date-of-birth">Date of Birth</label>
                             <div class="row">
                                 <div class="col-md-2">
-                                    <select class="form-control" id="exampleFormControlSelect1">
+                                    <select class="form-control" name="select-date" id="date">
                                         <option>01</option>
                                         <option>02</option>
                                         <option>03</option>
@@ -124,23 +126,23 @@
                                     </select>                                
                                 </div>
                                 <div class="col-md-4">
-                                    <select class="form-control" id="exampleFormControlSelect1">
-                                        <option>Januari</option>
-                                        <option>Februari</option>
-                                        <option>Maret</option>
-                                        <option>April</option>
-                                        <option>Mei</option>
-                                        <option>Juni</option>
-                                        <option>Juli</option>
-                                        <option>Agustus</option>
-                                        <option>September</option>
-                                        <option>Oktober</option>
-                                        <option>November</option>
-                                        <option>Desember</option>
+                                    <select class="form-control" name="select-month" id="month">
+                                        <option value="01">Januari</option>
+                                        <option value="02">Februari</option>
+                                        <option value="03">Maret</option>
+                                        <option value="04">April</option>
+                                        <option value="05">Mei</option>
+                                        <option value="06">Juni</option>
+                                        <option value="07">Juli</option>
+                                        <option value="08">Agustus</option>
+                                        <option value="09">September</option>
+                                        <option value="10">Oktober</option>
+                                        <option value="11">November</option>
+                                        <option value="12">Desember</option>
                                     </select>                                
                                 </div>
                                 <div class="col-md-2">
-                                    <input type="text" id="form-name" name="form-name" placeholder="e.g 1999" class="form-control" required="required">                              
+                                    <input type="text" id="form-date-year" name="form-date-year" placeholder="e.g 1999" class="form-control" required="required">                              
                                 </div>
                                 </div>
                                 <div class="form-group">
@@ -156,7 +158,7 @@
                                 <div class="form-group">
                                     <input type="checkbox" aria-label="...">
                                     <label for="gender">Semua data yang telah disi sesuai dengan data dan ketentuan yang berlaku</label>
-                                </div>                                   
+                                </div>    
                             <!-- <textarea name="message" id="form-message" name="form-message" rows="5" class="form-control" placeholder="Your message" required="required"></textarea> -->
                             <button type="submit" class="btn btn-success">Tambah</button>
                             <button type="submit" class="btn btn-info">Hapus</button>

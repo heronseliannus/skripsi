@@ -26,15 +26,14 @@ Ajax Contact Form
             'firstname' : $('input[name="form-firstname"]').val(),
             'lastname' : $('input[name="form-lastname"]').val(),
             'nik' : $('input[name="form-nik"]').val(),
-            'phone' : $('textarea[name="form-phone-number"]').val(),
-            'photo': $('select-photo').val(),
+            'phone' : $('input[name="form-phone-number"]').val(),
+            'photo': document.getElementById('input[name="form-photo"]').files[0],
             'password' : $('input[name="form-password"]').val(),
-            'address' : $('textarea[name="form-address"]').val(),
-            'kota' : $('#select-city').val(),
-            'provinsi': $('#select-state').val(),
-            'tgl_lahir': $('#select-date'),
-            'email' : $('textarea[name="form-user-email"]').val(),
-            'email' : $('textarea[name="form-re-email"]').val(),               
+            'address' : $('input[name="form-address"]').val(),
+            'kota' : $('input[name="select-city"] option:selected').text(),
+            'provinsi': $('input[name="select-state"]').val(),
+            'tgl_lahir': $('input[name="select-date"] option:selected').text() + '-' + $('input[name="select-month]').val() + '-' + $('input[name="form-date-year"]').val(),
+            'email' : $('input[name="form-user-email"]').val(),                   
         };
         console.log("FORM DATa", formData)
         // process the form
