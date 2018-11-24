@@ -11,7 +11,7 @@
                 <div class="row">
                     <div class="col-xs-12 col-sm-6 col-sm-offset-3 text-center">
                         <div class="page-title">
-                            <h2>Register</h2>
+                            <h2>Kelola Data Admin</h2>
                             <p>Input Registrasi Peserta Pelatihan</p>
                         </div>
                     </div>

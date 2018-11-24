@@ -35,7 +35,7 @@ Ajax Contact Form
         // process the form
         $.ajax({
             type : 'POST',
-            url  : '/admin',
+            url  : '/admins',
             data : formData,
             dataType : 'json',
             encode : true,

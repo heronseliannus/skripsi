@@ -12,7 +12,7 @@ class UserController extends Controller
 {
     public function index()
     {
-        return view('user', ['users' => User::all()]);
+    return view('user.user', ['users' => User::all()]);
     }
 
     public function store(Request $request)
