@@ -484,11 +484,13 @@
                                 <input type="email" id="form-user-email" name="form-user-email" class="form-control" placeholder="email" required="required">
                                 <input type="emailtype" id="form-re-email" name="form-re-email" class="form-control" placeholder="Re-enter email" required="required">                                
                             </div>          
-
                             <input type="text" id="form-phone-num" name="form-phone-number" class="form-control" placeholder="Phone Number">
-                            <input type="text" id="form-address" name="form-address" class="form-control" placeholder="Address">
+                            <div class="form-group">
+                            <textarea class="form-control" name="form-address" id="form-address" rows="3"placeholder="Address"></textarea>
+                            </div>
                             <div class="form-group">
                                 <select class="form-control" name="select-city" id="select-city">
+                                <option value="">Kota</option>
                                 <option value="Bandung">Bandung</option>
                                 <option value="Jakarta">Jakarta</option>
                                 <option value="Malang">Malang</option>
@@ -498,12 +500,21 @@
                             </div>               
                             <div class="form-group">
                                 <select class="form-control" name="select-state" id="select-state">
+                                <option value="">Provinsi</option>
                                 <option value="Jawa Barat">Jawa Barat</option>
                                 <option value="DKI Jakarta">DKI Jakarta</option>
                                 <option value="Jawa Tengah">Jawa Tengah</option>
                                 <option value="Kalimantan Barat">Kalimantan Barat</option>
                                 </select>
-                            </div>                  
+                            </div>
+                            <div class="form-group">
+                                <label for="Program">Program Pelatihan Telkom CorpU</label>
+                                <select class="form-control" name="select-program" id="select-program">
+                                <option value="Pelatihan Kepemimpinan">Pelatihan Kepemimpinan</option>
+                                <option value="Pelatihan Digital">Pelatihan Digital Learning</option>
+                                <option value="Pelatihan Kampiun">Pelatihan Kampiun</option>
+                                </select>
+                            </div>                   
                             <div class="form-group">
                                 <label for="upload-photo">Upload Photo</label>
                                 <input type="file" name="form-photo" id="select-photo" value="image" />
@@ -514,7 +525,7 @@
                                 <label for="gender">Wanita</label>
                                 <input type="checkbox" aria-label="...">
                             </div>   
-                            <label for="date-of-birth">Date of Birth</label>
+                            <label for="date-of-birth">Tanggal dan Tahun Lahir</label>
                             <div class="row">
                                 <div class="col-md-2">
                                     <select class="form-control" name="select-date" id="date">
@@ -573,17 +584,17 @@
                                 </div>
                                 <div class="form-group">
                                     <input type="checkbox" aria-label="...">
-                                    <label for="gender">Saya menyetujui Syarat dan Ketentuan</label>
+                                    <label for="">Saya menyetujui Syarat dan Ketentuan</label>
                                 </div>                                   
                                 
                                 <div class="form-group">
                                     <input type="checkbox" aria-label="...">
-                                    <label for="gender">Saya memberikan hak atas data diri Anda untuk situs Anda</label>
+                                    <label for="">Saya memberikan hak atas data diri Anda untuk situs Anda</label>
                                 </div>                                   
 
                                 <div class="form-group">
                                     <input type="checkbox" aria-label="...">
-                                    <label for="gender">Semua data yang telah disi sesuai dengan data dan ketentuan yang berlaku</label>
+                                    <label for="">Semua data yang telah disi sesuai dengan data dan ketentuan yang berlaku</label>
                                 </div>                                    
                                                        
                             <!-- <textarea name="message" id="form-message" name="form-message" rows="5" class="form-control" placeholder="Your message" required="required"></textarea> -->

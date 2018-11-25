@@ -1,9 +1,10 @@
 @extends('layout/tampilan')
 
-@section('title','Tabel Daftar Peserta')
+@section('title','Master Data Peserta')
 
 @section('content')
 
+<br>
 <br><br><br>
 <div class="countainer">
 <table class="table table-striped table-dark">
@@ -21,28 +22,28 @@
         <th scope="col">Provinsi</th>
         <th scope="col">Lahir</th>
         <th scope="col">email</th>
-        </tr>
+    </tr>
 </thead>
 <tbody>
-@foreach($users as $user)
-    <tr>
-      <th scope="col">1</th>
-      <td>{{$user->first_name}}</td>
-      <td>{{ $user->last_name }}</td>
-      <td>{{ $user->nik }}</td>
-      <td>{{ $user->phone }}</td>
-      <td $photoName>{{ $user->photo }}</td>
-      <td>{{ $user->password }}</td>
-      <td>{{ $user->address }}</td>
-      <td>{{ $user->city }}</td>
-      <td>{{ $user->state }}</td>
-      <td>{{ $user->birth_date }}</td>
-      <td>{{ $user->email }}</td>
-      <td>
+<tr>
+        <td>No</td>
+        <td>Stepano</td>
+        <td>Ramalo Bibit</td>
+        <td>123456</td>
+        <td>098765678</td>
+        <td>#</th>
+        <td>ramalo2345</td>
+        <td>Karangan</td>
+        <td>Kota</td>
+        <td>Kalimantan Barat</td>
+        <td>1995-10-01</td>
+        <td>Ramalo@gmail.com</td>
+        <td>
         <button type="submit" class="btn btn-success">Edit</button>
         <button type="submit" class="btn btn-info">Hapus</button>
         </td>
+        <button type="submit" class="btn btn-success">Tambah Data</button>
     </tr>
-@endforeach
+</tbody>
 </table>
 </div>

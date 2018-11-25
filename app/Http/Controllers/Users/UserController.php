@@ -37,6 +37,7 @@ class UserController extends Controller
         $user->address = $request['form-address'];
         $user->city = $request['select-city'];
         $user->state = $request['select-state'];
+        $user->program = $request['select-program'];
         $user->birth_date = Carbon::parse($request['select-date'] . '-' . $request['select-month'] . '-' . $request['form-date-year']) ;
         $user->email = $request['form-user-email'];
 
@@ -44,5 +45,40 @@ class UserController extends Controller
 
         return view('testing', compact('request'));
 
+    }
+    
+//insert data registrasi user
+    public function insert()
+    {
+        return view('user.user', ['users' => User::all()]);
+    }
+
+//update data registrasi user
+    public function update()
+    {
+        return view('user.user', ['users' => User::all()]);
+    }
+
+//delete data registrasi user
+    public function delete()
+    {
+        DB::table('users')->delete();
+        $user->first_name = $request['form-firstname'];
+        $user->last_name = $request['form-lastname'];
+        $user->nik = $request['form-nik'];
+        $user->phone = $request['form-phone-number'];
+        $user->photo = $photoName;
+        $user->role_id = 2;
+        $user->password = $request['form-password'];
+        $user->address = $request['form-address'];
+        $user->city = $request['select-city'];
+        $user->state = $request['select-state'];
+        $user->program = $request['select-program'];
+        $user->birth_date = Carbon::parse($request['select-date'] . '-' . $request['select-month'] . '-' . $request['form-date-year']) ;
+        $user->email = $request['form-user-email'];
+    
+        $user->delete();
+
+                return view('testing', compact('request'));
     }
 }

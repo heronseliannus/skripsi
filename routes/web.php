@@ -43,14 +43,25 @@ Route::get('/kelolanilai', function()
   return view('admin/kelolanilai');
 });
 
+Route::get('/masterdata', function()
+{
+  return view('admin/masterdata');
+});
 
+//user
 Route::get('/users', 'Users\UserController@index');
-
 Route::post('/users', 'Users\UserController@store');
 
 Route::post('/testing', 'TestingController@store');
 
+Route::get('/users', 'Users\UserController@insert');
+Route::post('/users', 'Users\UserController@store');
 
+Route::get('/users', 'Users\UserController@update');
+Route::post('/users', 'Users\UserController@store');
+
+Route::delete('/users', 'Users\UserController@delete');
+
+// admin
 Route::get('/admin', 'Admins\KelolanilaiController@index');
-
 Route::post('/admin', 'Admins\KelolanilaiController@store');

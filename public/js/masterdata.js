@@ -14,7 +14,7 @@ Ajax Contact Form
 (function ($, window, document, undefined) {
     'use strict';
 
-    var $form = $('#registration-form');
+    var $form = $('#kelolaregistrasi-form');
 
     $('#registration-form').submit(function (e) {
         // remove the error class
@@ -30,10 +30,9 @@ Ajax Contact Form
             'photo': document.getElementById('input[name="form-photo"]').files[0],
             'password' : $('input[name="form-password"]').val(),
             'address' : $('input[name="form-address"]').val(),
-            'city' : $('input[name="select-city"] option:selected').text(),
-            'state': $('input[name="select-state"]').val(),
-            'program' : $('input[name="select-program"]').val(),
-            'birth_date': $('input[name="select-date"] option:selected').text() + '-' + $('input[name="select-month]').val() + '-' + $('input[name="form-date-year"]').val(),
+            'kota' : $('input[name="select-city"] option:selected').text(),
+            'provinsi': $('input[name="select-state"]').val(),
+            'tgl_lahir': $('input[name="select-date"] option:selected').text() + '-' + $('input[name="select-month]').val() + '-' + $('input[name="form-date-year"]').val(),
             'email' : $('input[name="form-user-email"]').val(),              
         };
         console.log("FORM DATa", formData)

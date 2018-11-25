@@ -60,7 +60,9 @@
                             </div>          
 
                             <input type="text" id="form-phone-num" name="form-phone-number" class="form-control" placeholder="Phone Number">
-                            <input type="text" id="form-address" name="form-address" class="form-control" placeholder="Address">
+                            <div class="form-group">
+                            <textarea class="form-control" name="form-address" id="form-address" rows="3"placeholder="Address"></textarea>
+                            </div>
                             <div class="form-group">
                                 <select class="form-control" name="select-city" id="select-city">
                                 <option value="Bandung">Bandung</option>
@@ -161,6 +163,7 @@
                                 </div>    
                             <!-- <textarea name="message" id="form-message" name="form-message" rows="5" class="form-control" placeholder="Your message" required="required"></textarea> -->
                             <button type="submit" class="btn btn-success">Tambah</button>
+                            <button type="submit"><a class="btn btn-success" herf="http://localhost:8000/users">Lihat Data</a></button>
                             <button type="submit" class="btn btn-info">Hapus</button>
                             <button type="submit" class="btn btn-warning">Batal</button>
                         </form>
