@@ -39,8 +39,10 @@
       <td>{{ $user->birth_date }}</td>
       <td>{{ $user->email }}</td>
       <td>
-        <button type="submit" class="btn btn-success">Edit</button>
-        <button type="submit" class="btn btn-info">Hapus</button>
+        <form action="/users/{{$user}}" method="delete">
+        <button type="submit" class="btn btn-success" value="PUT">Delete</button>
+        <button type="submit" class="btn btn-info">Update</button>
+        </form>
         </td>
     </tr>
 @endforeach

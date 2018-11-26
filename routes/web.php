@@ -54,13 +54,8 @@ Route::post('/users', 'Users\UserController@store');
 
 Route::post('/testing', 'TestingController@store');
 
-Route::get('/users', 'Users\UserController@insert');
-Route::post('/users', 'Users\UserController@store');
-
-Route::get('/users', 'Users\UserController@update');
-Route::post('/users', 'Users\UserController@store');
-
-Route::delete('/users', 'Users\UserController@delete');
+Route::delete('/users{nik}/delete', 'Users\UserController@delete');
+Route::put('/users{nik}', 'Users\UserController@update');
 
 // admin
 Route::get('/admin', 'Admins\KelolanilaiController@index');
