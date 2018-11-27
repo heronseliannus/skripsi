@@ -3,7 +3,6 @@
 @section('title','Kelola Registrasi Admin!')
 
 @section('content')
-
 <footer class="footer-area relative sky-bg" id="kelolaregistrasi-form">
 <div class="absolute footer-bg"></div>
         <div class="footer-top">
@@ -11,7 +10,7 @@
                 <div class="row">
                     <div class="col-xs-12 col-sm-6 col-sm-offset-3 text-center">
                         <div class="page-title">
-                            <h2>Kelola Data Admin</h2>
+                            <h2>Update Data Admin</h2>
                             <p>Input Registrasi Peserta Pelatihan</p>
                         </div>
                     </div>
@@ -46,7 +45,7 @@
                         </address>
                     </div>
                     <div class="col-xs-12 col-md-8">
-                        <form action="/users" class="contact-form" method="post" id="registration-form">
+                        <form action="/user/{edit->$nik}" class="contact-form" method="post" id="registration-form">
                             @csrf
                             <div class="form-double">
                                 <input type="text" id="form-firstname" name="form-firstname" placeholder="First name" class="form-control" required="required">
@@ -169,9 +168,8 @@
                                     <label for="gender">Semua data yang telah disi sesuai dengan data dan ketentuan yang berlaku</label>
                                 </div>    
                             <!-- <textarea name="message" id="form-message" name="form-message" rows="5" class="form-control" placeholder="Your message" required="required"></textarea> -->
-                            <button type="submit" class="btn btn-success">Edit Data Anda</button>
-                            <button type="submit" class="btn btn-info">Hapus</button>
-                            <button type="submit" class="btn btn-warning">Batal</button>
+                            <input type="hidden" name="edit" value="PUT">
+                            <button type="submit" class="btn btn-success" value="PUT">Edit Data</button>
                         </form>
                     </div>
                 </div>

@@ -30,7 +30,11 @@ Route::get('/update', function() {
   return view('user/update');
 });
 
+
 //admin
+Route::get('/menuadmin', function() {
+  return view('layout/menuadmin');
+});
 Route::get('/updatedata', function() {
   return view('admin/updatedata');
 });
@@ -70,13 +74,20 @@ Route::get('/masterdata', function()
 Route::get('/users', 'Users\UserController@index');
 Route::post('/users', 'Users\UserController@store');
 
+Route::get('/users/{$nik}/edit', 'Users\UserController@edit');
+Route::put('/users/{$nik}', 'Users\UserController@update');
+
+// Route::get('/users/create', 'Users\UserController@create');
+// Route::store('/users', 'Users\UserController@store');
+
 Route::post('/testing', 'TestingController@store');
+
 
 //Route::get('/edit', 'TestingController@edit');
 
-Route::delete('/users{nik}/delete', 'Users\UserController@delete');
-Route::put('/users{nik}', 'Users\UserController@update');
+// Route::delete('/users{nik}/delete', 'Users\UserController@delete');
+// Route::put('/users{nik}', 'Users\UserController@update');
 
-// admin
-Route::get('/admin', 'Admins\KelolanilaiController@index');
-Route::post('/admin', 'Admins\KelolanilaiController@store');
+// // admin
+// Route::get('/admin', 'Admins\KelolanilaiController@index');
+// Route::post('/admin', 'Admins\KelolanilaiController@store');

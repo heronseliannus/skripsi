@@ -39,11 +39,11 @@
       <td>{{ $user->birth_date }}</td>
       <td>{{ $user->email }}</td>
       <td>
-        <form action="/users" method="delete">
-        <button type="submit" class="btn btn-success" value="PUT">Delete</button>
-        <form action="/users/edit" method="edit">
-        <button type="submit" class="btn btn-info" herf="/users/edit">Update</button>
-        </form>
+        <form action="/user/{edit->$nik}" class="contact-form" method="post" id="registration-form">
+        <button type="submit" class="btn btn-warning" value="PUT">Delete</button>
+        <input type="hidden" name="edit" value="PUT">
+        <button type="submit" class="btn btn-success" value="PUT">Edit Data</button>
+       </form>
        </td>
     </tr>
 @endforeach

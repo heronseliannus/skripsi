@@ -1,6 +1,6 @@
 @extends('layout.tampilan')
 
-@section('title','Kelola Registrasi Admin!')
+@section('title','Create Registrasi Admin!')
 
 @section('content')
 
@@ -11,7 +11,7 @@
                 <div class="row">
                     <div class="col-xs-12 col-sm-6 col-sm-offset-3 text-center">
                         <div class="page-title">
-                            <h2>Update Data Admin</h2>
+                            <h2>Masukan Data Baru</h2>
                             <p>Input Registrasi Peserta Pelatihan</p>
                         </div>
                     </div>
@@ -169,9 +169,7 @@
                                     <label for="gender">Semua data yang telah disi sesuai dengan data dan ketentuan yang berlaku</label>
                                 </div>    
                             <!-- <textarea name="message" id="form-message" name="form-message" rows="5" class="form-control" placeholder="Your message" required="required"></textarea> -->
-                            <button type="submit" class="btn btn-success">Update</button>
-                            <button type="submit" class="btn btn-info">Hapus</button>
-                            <button type="submit" class="btn btn-warning">Batal</button>
+                            <button type="submit" class="btn btn-success" value="create">Create</button>
                         </form>
                     </div>
                 </div>
