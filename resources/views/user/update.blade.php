@@ -169,8 +169,7 @@
                                     <label for="gender">Semua data yang telah disi sesuai dengan data dan ketentuan yang berlaku</label>
                                 </div>    
                             <!-- <textarea name="message" id="form-message" name="form-message" rows="5" class="form-control" placeholder="Your message" required="required"></textarea> -->
-                            <button type="submit" class="btn btn-success">Tambah</button>
-                            <button type="submit"><a class="btn btn-success" herf="http://localhost:8000/users">Lihat Data</a></button>
+                            <button type="submit" class="btn btn-success">Update</button>
                             <button type="submit" class="btn btn-info">Hapus</button>
                             <button type="submit" class="btn btn-warning">Batal</button>
                         </form>

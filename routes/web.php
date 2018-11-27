@@ -16,11 +16,32 @@ use Illuminate\Http\Request;
 Route::get('/', function () {
     return view('home');
 });
-/*
+
+Route::get('/tampilan', function()
+{
+  return view('layout/tampilan');
+});
+
+//user
+Route::get('/edit', function() {
+  return view('user/edit');
+});
+Route::get('/update', function() {
+  return view('user/update');
+});
+
+//admin
+Route::get('/updatedata', function() {
+  return view('admin/updatedata');
+});
+Route::get('/updatedata', function() {
+  return view('admin/updatedata');
+});
+
 Route::get('akun', function() {
   return view('akun');
 });
-*/
+
 Route::get('/pendaftaran', function() {
   return view('pendaftaran');
 });
@@ -34,10 +55,7 @@ Route::get('/kelolaregistrasi', function()
   return view('admin/kelolaregistrasi');
 });
 
-Route::get('/tampilan', function()
-{
-  return view('layout/tampilan');
-});
+
 Route::get('/kelolanilai', function()
 {
   return view('admin/kelolanilai');
@@ -53,6 +71,8 @@ Route::get('/users', 'Users\UserController@index');
 Route::post('/users', 'Users\UserController@store');
 
 Route::post('/testing', 'TestingController@store');
+
+//Route::get('/edit', 'TestingController@edit');
 
 Route::delete('/users{nik}/delete', 'Users\UserController@delete');
 Route::put('/users{nik}', 'Users\UserController@update');
