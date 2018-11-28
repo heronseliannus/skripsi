@@ -11,7 +11,7 @@
     <tr>
         <th scope="col">No</th>
         <th scope="col">Nama Depan</th>
-        <th scope="col">Nama Belakang</th>
+        <th scope="col">nama Belakang</th>
         <th scope="col">Nik</th>
         <th scope="col">phone</th>
         <th scope="col">photo</th>
@@ -39,9 +39,10 @@
       <td>{{ $user->birth_date }}</td>
       <td>{{ $user->email }}</td>
       <td>
-        <form action="/user/{edit->$nik}" class="contact-form" method="post" id="registration-form">
-        <button type="submit" class="btn btn-warning" value="PUT">Delete</button>
-        <input type="hidden" name="edit" value="PUT">
+        <!--method button -->
+        <form action="/users/{{$user->id}}" method="post">
+        <input type="hidden" name="_method" value="PUT">
+        <!--tombol button -->
         <button type="submit" class="btn btn-success" value="PUT">Edit Data</button>
        </form>
        </td>

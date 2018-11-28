@@ -48,11 +48,11 @@ class UserController extends Controller
     }
 //edit
 
-    public function edit($nik)
+    public function edit($id)
     {
-        $user = User::find($nik);
+        $user = User::find($id);
 
-        return view('user/edit', ['users' => $user]);
+        return view('user/user/edit', ['users' => User::all()]);
     }
 //create data user
     // public function create()

@@ -45,7 +45,7 @@
                         </address>
                     </div>
                     <div class="col-xs-12 col-md-8">
-                        <form action="/user/{edit->$nik}" class="contact-form" method="post" id="registration-form">
+                        <form action="/users/{{$edit->id}}" method="post" id="registration-form">
                             @csrf
                             <div class="form-double">
                                 <input type="text" id="form-firstname" name="form-firstname" placeholder="First name" class="form-control" required="required">
@@ -168,8 +168,9 @@
                                     <label for="gender">Semua data yang telah disi sesuai dengan data dan ketentuan yang berlaku</label>
                                 </div>    
                             <!-- <textarea name="message" id="form-message" name="form-message" rows="5" class="form-control" placeholder="Your message" required="required"></textarea> -->
-                            <input type="hidden" name="edit" value="PUT">
-                            <button type="submit" class="btn btn-success" value="PUT">Edit Data</button>
+                                                    
+                            <button type="submit" class="btn btn-success">Edit Data</button>
+                            <input type="hidden" name="_method" value="PUT">
                         </form>
                     </div>
                 </div>
