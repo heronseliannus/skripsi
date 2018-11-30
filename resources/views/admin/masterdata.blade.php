@@ -26,7 +26,7 @@
 </thead>
 <tbody>
 <tr>
-        <td>No</td>
+        <td>1</td>
         <td>Stepano</td>
         <td>Ramalo Bibit</td>
         <td>123456</td>
@@ -43,6 +43,24 @@
         <button type="submit" class="btn btn-info">Hapus</button>
         </td>
         <button type="submit" class="btn btn-success">Tambah Data</button>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>Ardi</td>
+        <td>Sandi</td>
+        <td>123456</td>
+        <td>09876567128</td>
+        <td>#</th>
+        <td>sandi2345</td>
+        <td>Ngabang</td>
+        <td>Ngabang</td>
+        <td>Kalimantan Barat</td>
+        <td>1995-10-01</td>
+        <td>sandi@gmail.com</td>
+        <td>
+        <button type="submit" class="btn btn-success">Edit</button>
+        <button type="submit" class="btn btn-info">Hapus</button>
+        </td>
     </tr>
 </tbody>
 </table>
