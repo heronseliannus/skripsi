@@ -3,8 +3,8 @@
 @section('title','Tabel Daftar Peserta')
 
 @section('content')
-
-<br><br><br>
+<footer class="footer-area" id="kelolaregistrasi-form">
+<div class="absolute footer-bg"></div>
 <div class="countainer">
 <table class="table table-striped table-dark">
 <thead>
@@ -24,6 +24,7 @@
         </tr>
 </thead>
 <tbody>
+
 @foreach($users as $user)
     <tr>
       <th scope="col">1</th>
@@ -39,14 +40,18 @@
       <td>{{ $user->birth_date }}</td>
       <td>{{ $user->email }}</td>
       <td>
-        <!--method button -->
+        <!--Update Data -->
         <form action="/users/{{$user->id}}" method="post">
         <input type="hidden" name="_method" value="PUT">
-        <!--tombol button -->
         <button type="submit" class="btn btn-success" value="PUT">Edit Data</button>
-       </form>
+        <!--Hapus Data -->
+        <form action="/users/{{$user->id}}" method="post">
+        <input type="hidden" name="_method" value="Delete">
+        <button type="submit" class="btn btn-Warning" value="PUT">Delete</button>
+        </form>
        </td>
     </tr>
 @endforeach
 </table>
 </div>
+</footer>

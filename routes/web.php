@@ -74,13 +74,20 @@ Route::get('/masterdata', function()
 Route::get('/users', 'Users\UserController@index');
 Route::post('/users', 'Users\UserController@store');
 
+Route::post('/testing', 'TestingController@store');
+
 Route::get('/users/{id}/edit', 'UserController@edit');
 Route::put('/users/{id}', 'UserController@update');
+
+// laporan
+Route::get('laporan/pdf', 'LaporanController@pdf');
+
+Route::delete('/users{id}', 'UsersController@delete')
 
 // Route::get('/users/create', 'Users\UserController@create');
 // Route::store('/users', 'Users\UserController@store');
 
-Route::post('/testing', 'TestingController@store');
+
 
 
 //Route::get('/edit', 'TestingController@edit');

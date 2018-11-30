@@ -89,15 +89,10 @@ class UserController extends Controller
     // }
 
 // delete data
-    // public function delete()
-    // {
-    //     return view('user.user', ['users' => User::all()]);
-    // }
-
-    // public function delete()
-    // {
-    //    $delete=DB::table('users')
-    //    ->where('user->$nik')
-    //    ->delete();
-    //     }
+    public function delete($id)
+    {
+       $user =  User::find($id);
+       $user->delete();
+       return view('testing', compact('request'));
+    }
 }
