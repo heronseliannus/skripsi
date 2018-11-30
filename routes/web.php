@@ -82,7 +82,7 @@ Route::put('/users/{id}', 'UserController@update');
 // laporan
 Route::get('laporan/pdf', 'LaporanController@pdf');
 
-Route::delete('/users{id}', 'UsersController@delete')
+Route::delete('/users{id}', 'UsersController@delete');
 
 // Route::get('/users/create', 'Users\UserController@create');
 // Route::store('/users', 'Users\UserController@store');
