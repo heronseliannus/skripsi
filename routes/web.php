@@ -70,6 +70,16 @@ Route::get('/masterdata', function()
   return view('admin/masterdata');
 });
 
+Route::get('/laporan', function()
+{
+  return view('user/laporan');
+});
+
+Route::get('/tampilpelatihan', function()
+{
+  return view('user/tampilpelatihan');
+});
+
 //user
 Route::get('/users', 'Users\UserController@index');
 Route::post('/users', 'Users\UserController@store');
@@ -78,6 +88,9 @@ Route::post('/testing', 'TestingController@store');
 
 Route::get('/users/{id}/edit', 'UserController@edit');
 Route::put('/users/{id}', 'UserController@update');
+
+Route::get('/users/{$program}/show', 'UserController@get');
+Route::put('/users/{$program}', 'UserController@show');
 
 // laporan
 Route::get('laporan/pdf', 'LaporanController@pdf');

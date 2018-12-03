@@ -32,7 +32,7 @@ Ajax Contact Form
             'address' : $('input[name="form-address"]').val(),
             'city' : $('input[name="select-city"] option:selected').text(),
             'state': $('input[name="select-state"]').val(),
-            'program' : $('input[name="select-program"]').val(),
+            'programs' : $('input[name="select-program"]').val(),
             'birth_date': $('input[name="select-date"] option:selected').text() + '-' + $('input[name="select-month]').val() + '-' + $('input[name="form-date-year"]').val(),
             'email' : $('input[name="form-user-email"]').val(),              
         };

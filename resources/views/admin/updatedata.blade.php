@@ -11,8 +11,8 @@
                 <div class="row">
                     <div class="col-xs-12 col-sm-6 col-sm-offset-3 text-center">
                         <div class="page-title">
-                            <h2>Kelola Data Admin</h2>
-                            <p>Input Registrasi Peserta Pelatihan</p>
+                            <h2>Lakukan Kelola data Registrasi</h2>
+                            <p>Update Data Registrasi Pelatihan</p>
                         </div>
                     </div>
                 </div>

@@ -89,10 +89,16 @@ class UserController extends Controller
     // }
 
 // delete data
-    public function delete($id)
-    {
-       $user =  User::find($id);
-       $user->delete();
-       return view('testing', compact('request'));
-    }
+    // public function delete($id)
+    // {
+    //    $user =  User::find($id);
+    //    $user->delete();
+    //    return view('testing', compact('request'));
+    // }
+    // public function select();
+    // DB::table('users')->orderBy('id')->chunk(100, function ($users) {
+    //     foreach ($users as $user) {
+    //         //
+    //     }
+    // });
 }
