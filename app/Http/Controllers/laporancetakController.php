@@ -9,12 +9,8 @@ class LaporanController extends Controller
 
     public function laporan()
     {
-
         $user = new User;
         $user->program = $request['select-program'];
         $user->save();
     }
-
-
-
 }

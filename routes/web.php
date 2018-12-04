@@ -85,6 +85,13 @@ Route::get('/nilai', function()
   return view('user/nilai');
 });
 
+// dassboard admin
+
+Route::get ('/index', function (){
+ return view('menu/index');
+});
+
+
 //user
 Route::get('/users', 'Users\UserController@index');
 Route::post('/users', 'Users\UserController@store');

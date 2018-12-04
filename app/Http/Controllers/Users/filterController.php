@@ -6,9 +6,6 @@ use Illuminate\Http\Request;
 
 class filterController extends Controller
 {
-
-
-
     public function getCustomFilter()
     {
         return view('datatables.collection.custom-filter');
