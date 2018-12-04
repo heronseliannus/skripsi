@@ -80,6 +80,11 @@ Route::get('/tampilpelatihan', function()
   return view('user/tampilpelatihan');
 });
 
+Route::get('/nilai', function()
+{
+  return view('user/nilai');
+});
+
 //user
 Route::get('/users', 'Users\UserController@index');
 Route::post('/users', 'Users\UserController@store');

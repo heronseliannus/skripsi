@@ -119,10 +119,7 @@
                             <input type="password" id="form-subject" name="form-subject" class="form-control" placeholder="Nik">
                             <input type="text" id="form-subject" name="form-subject" class="form-control" placeholder="Password">
                             <!-- <textarea name="message" id="form-message" name="form-message" rows="5" class="form-control" placeholder="Your message" required="required"></textarea> -->
-                            <button type="sibmit" class="btn btn-primary btn-lg">Cek</button>
-                            <button type="sibmit" class="btn btn-primary btn-lg">Batal</button>
-                            <button type="sibmit" class="btn btn-warning btn-lg">Hapus</button>
-                            <button type="sibmit" class="btn btn-info btn-lg">Daftar</button>
+                            <button type="sibmit" class="btn btn-primary btn-lg">Submmit</button>
                         </form>
                     </div>
                 </div>
