@@ -36,7 +36,7 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
         <!-- Place favicon.ico in the root directory -->
-        <link rel="tcu-regular.png" href="images/atcu-regular.png">
+    <link rel="tcu-regular.png" href="images/atcu-regular.png">
     <link rel="shortcut icon" type="image/tcu-regular.png" href="images/telkom.png" />
     <!-- Plugin-CSS -->
     <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
