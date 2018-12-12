@@ -491,11 +491,16 @@
                             <div class="form-group">
                                 <select class="form-control" name="select-city" id="select-city">
                                 <option value="">Kota</option>
-                                <option value="Bandung">Bandung</option>
-                                <option value="Jakarta">Jakarta</option>
-                                <option value="Malang">Malang</option>
-                                <option value="Semarang">Semarang</option>
-                                <option value="Pontianak">Pontianak</option>
+                                <option value="Serang">Serang</option>
+                                <option value="Jakarta">Jakarta</option><option value="Samarinda">Samarinda</option><option value="Gorontalo">Gorontalo</option><option value="Pangkalpinang">Pangkal Pinang</option>
+                                <option value="Bandung">Bandung</option><option value="Tanjungselor">Tanjungselor</option><option value="Mamuju">Mamuju</option><option value="Tanjung Pinang">Tanjung Pinang</option>
+                                <option value="Semarang">Semarang</option><option value="Ambon">Ambon</option><option value="Makasar">Makasar</option><option value="Bandar Lampung">Bandar Lampung</option>
+                                <option value="Surabaya">Surabaya</option><option value="Sofili">Sofili</option><option value="Palu">Palu</option><option value="Pekanbaru">Pekanbaru</option>
+                                <option value="Yogyakarta">Yogyakarta</option><option value="Denpasar">Denpasar</option><option value="Kendari">Kendari</option><option value="Padang">Padang</option>
+                                <option value="Pontianak">Pontianak</option><option value="Mataram">Mataram</option><option value="Manado">Manado</option><option value="Palembang">Palembang</option>
+                                <option value="banjarmasin">Banjarmasin</option><option value="Kupang">Kupang</option><option value="Banda Aceh">Banda Aceh</option><option value="Medan">Medan</option>
+                                <option value="Palangkaraya">Palangkaraya</option><option value="Jayapura">Jayapura</option><option value="bengkulu">Bengkulu</option>
+                                <option value="Pontianak">Pontianak</option><option value="Manokowari">Manokowari</option><option value="Jambi">Jambi</option>
                                 </select>
                             </div>               
                             <div class="form-group">
