@@ -73,7 +73,8 @@ Route::get('/masterdata', function()
 Route::get('/laporan', function()
 {
   return view('user/laporan');
-});laravel telescope
+});
+//laravel telescope
 
 Route::get('/tampilpelatihan', function()
 {
