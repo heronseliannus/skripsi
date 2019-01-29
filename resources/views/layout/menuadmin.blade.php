@@ -11,7 +11,7 @@
                     <div class="col-xs-12 col-sm-6 col-sm-offset-3 text-center">
                         <div class="page-title">
                             <h3>Selamat Datang di Sistem Informasi Pelatihan Telkom CorpU</h3>
-                            <p> Lakukan Kelola Data</p>
+                            <p> Lakukan Kelola Data Pelatihan Telkom CorpU</p>
                         </div>
                     </div>
                 </div>
