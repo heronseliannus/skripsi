@@ -95,9 +95,6 @@ Route::get ('/index', function (){
 route::get ('/grid', function(){
   return  view('menu/grid');
 });
-route::get ('/flot', function(){
-  return  view('menu/flot');
-});
 route::get ('/form', function(){
   return  view('menu/form');
 });
