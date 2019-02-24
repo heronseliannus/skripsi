@@ -91,7 +91,19 @@ Route::get('/nilai', function()
 Route::get ('/index', function (){
  return view('menu/index');
 });
-
+//testing saja
+route::get ('/grid', function(){
+  return  view('menu/grid');
+});
+route::get ('/flot', function(){
+  return  view('menu/flot');
+});
+route::get ('/form', function(){
+  return  view('menu/form');
+});
+route::get ('/typograpy', function(){
+  return  view('menu/typograpy');
+});
 
 //user
 Route::get('/users', 'Users\UserController@index');
