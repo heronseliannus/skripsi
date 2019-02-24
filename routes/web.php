@@ -92,9 +92,6 @@ Route::get ('/index', function (){
  return view('menu/index');
 });
 //testing saja
-route::get ('/grid', function(){
-  return  view('menu/grid');
-});
 route::get ('/form', function(){
   return  view('menu/form');
 });
