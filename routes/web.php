@@ -74,6 +74,7 @@ Route::get('/laporan', function()
 {
   return view('user/laporan');
 });
+
 //laravel telescope
 
 Route::get('/tampilpelatihan', function()
@@ -92,10 +93,12 @@ Route::get ('/index', function (){
  return view('menu/index');
 });
 //testing saja
-route::get ('/form', function(){
+Route::get ('/form', function(){
   return  view('menu/form');
 });
-
+Route::get ('/account', function(){
+  return view('user/account');
+});
 
 //user
 Route::get('/users', 'Users\UserController@index');
