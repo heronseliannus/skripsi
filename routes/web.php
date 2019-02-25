@@ -95,9 +95,7 @@ Route::get ('/index', function (){
 route::get ('/form', function(){
   return  view('menu/form');
 });
-route::get ('/typograpy', function(){
-  return  view('menu/typograpy');
-});
+
 
 //user
 Route::get('/users', 'Users\UserController@index');
