@@ -93,7 +93,7 @@
                 <div class="hidden-xs hidden-sm col-md-4 text-right">
                     <div class="screen-box screen-slider">
                         <div class="item">
-                            <img src="images/telkom1.jpg" alt="">
+                            <img src="images/asro.jpg" alt="">
                         </div>
                         <div class="item">
                             <img src="images/telkom2.jpg" alt="">
