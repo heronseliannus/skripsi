@@ -54,4 +54,25 @@ class UserTableSeeder extends Seeder
             'updated_at' => Carbon::now()->format('Y-m-d H:i:s'),
         ]);
     }
+    public function run()
+    {
+         $roleId = DB::table('roles')->pluck('id')[0];
+         DB::table('users')->delete([
+             'first_name' => 'heron',
+             'last_name' => 'seli', 
+             'nik' => '9806',
+             'phone' =>'08537689',
+             'photo'=> 'https://jpg',
+             'role_id' => $roleId,
+             'password' => Hash::make('secret'), 
+             'address' => 'Jalan Picung, Sukasari',
+             'city' => 'Bandung',
+             'state' => 'Jawa Barat',
+             'program' => 'Pelatihan Kampiun'
+             'birth_date' =>  Carbon::parse('10-07-1995'),
+             'email' => 'heronselianus171095@gmail.com',
+             'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
+             'updated_at' => Carbon::now()->format('Y-m-d H:i:s'),
+         ]);
+     }
 }
