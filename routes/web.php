@@ -117,17 +117,17 @@ Route::get('laporan/pdf', 'LaporanController@pdf');
 
 Route::delete('/users{id}', 'UsersController@delete');
 
-// Route::get('/users/create', 'Users\UserController@create');
-// Route::store('/users', 'Users\UserController@store');
+Route::get('/users/create', 'Users\UserController@create');
+Route::store('/users', 'Users\UserController@store');
 
 
 
 
-//Route::get('/edit', 'TestingController@edit');
+Route::get('/edit', 'TestingController@edit');
 
-// Route::delete('/users{nik}/delete', 'Users\UserController@delete');
-// Route::put('/users{nik}', 'Users\UserController@update');
+Route::delete('/users{nik}/delete', 'Users\UserController@delete');
+Route::put('/users{nik}', 'Users\UserController@update');
 
-// // admin
-// Route::get('/admin', 'Admins\KelolanilaiController@index');
-// Route::post('/admin', 'Admins\KelolanilaiController@store');
+// admin
+Route::get('/admin', 'Admins\KelolanilaiController@index');
+Route::post('/admin', 'Admins\KelolanilaiController@store');
