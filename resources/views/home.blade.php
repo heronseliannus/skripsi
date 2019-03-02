@@ -96,16 +96,16 @@
                             <img src="images/asro.jpg" alt="">
                         </div>
                         <div class="item">
-                            <img src="images/telkom2.jpg" alt="">
+                            <img src="images/asro2.jpg" alt="">
                         </div>
                         <div class="item">
-                            <img src="images/telkom3.jpg" alt="">
+                            <img src="images/asro3.jpg" alt="">
                         </div>
                         <div class="item">
-                            <img src="images/telkom4.jpg" alt="">
+                            <img src="images/asro4.jpg" alt="">
                         </div>
                         <div class="item">
-                            <img src="images/telkom5.jpg" alt="">
+                            <img src="images/asro5.jpg" alt="">
                         </div>
                     </div>
                 </div>
