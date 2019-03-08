@@ -58,7 +58,7 @@
             <!--Logo/-->
             <nav class="collapse navbar-collapse" id="primary-menu">
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="active"><a href="#home-page">Home</a></li>
+                    <li class="active"><a href="#home-page">Telkom CorpU</a></li>
                     <li><a href="#service-page">Info</a></li>
                     <li><a href="#feature-page">Profil</a></li>
                     <li><a href="#blog-page">Galery</a></li>
