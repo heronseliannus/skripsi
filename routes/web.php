@@ -113,15 +113,10 @@ Route::get('/users/{$program}/show', 'UserController@get');
 Route::put('/users/{$program}', 'UserController@show');
 
 // laporan
-Route::get('laporan/pdf', 'LaporanController@pdf');
-
 Route::delete('/users{id}', 'UsersController@delete');
 
 Route::get('/users/create', 'Users\UserController@create');
 Route::store('/users', 'Users\UserController@store');
-
-
-
 
 Route::get('/edit', 'TestingController@edit');
 
