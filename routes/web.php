@@ -75,26 +75,6 @@ Route::get('/laporan', function()
   return view('user/laporan');
 });
 
-//laravel telescope
-
-Route::get('/tampilpelatihan', function()
-{
-  return view('user/tampilpelatihan');
-});
-
-Route::get('/nilai', function()
-{
-  return view('user/nilai');
-});
-
-// dassboard admin
-
-
-//testing saja
-
-Route::get ('/account', function(){
-  return view('user/account');
-});
 
 //user
 Route::get('/users', 'Users\UserController@index');
@@ -112,7 +92,7 @@ Route::put('/users/{$program}', 'UserController@show');
 Route::delete('/users{id}', 'UsersController@delete');
 
 Route::get('/users/create', 'Users\UserController@create');
-Route::store('/users', 'Users\UserController@store');
+
 
 Route::get('/edit', 'TestingController@edit');
 
