@@ -89,13 +89,9 @@ Route::get('/nilai', function()
 
 // dassboard admin
 
-Route::get ('/index', function (){
- return view('menu/index');
-});
+
 //testing saja
-Route::get ('/form', function(){
-  return  view('menu/form');
-});
+
 Route::get ('/account', function(){
   return view('user/account');
 });
