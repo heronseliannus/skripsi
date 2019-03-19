@@ -91,7 +91,8 @@
                        Telkom Corporate University (Telkom CorpU) didefinisikan sebagai  wahana strategis
                        yang dirancang untuk mendukung pencapaian misi perusahaan dengan melakukan
                        kegiatan-kegiatan untuk memperkuat dan  memperkokoh kemampuan belajar individu
-                       dan organisasi dalam rangka  membentuk Center of Excellence.</p>
+                       dan organisasi dalam rangka  membentuk Center of Excellence.
+                       </p>
                     <a href="#" class="button white">Watch video</a>
                 </div>
                 <div class="hidden-xs hidden-sm col-md-4 text-right">
