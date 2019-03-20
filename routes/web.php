@@ -75,6 +75,11 @@ Route::get('/laporan', function()
   return view('user/laporan');
 });
 
+Route::get('/layout', function() 
+{
+  return view('layout/history');
+
+});
 
 //user
 Route::get('/users', 'Users\UserController@index');
@@ -102,3 +107,4 @@ Route::put('/users{nik}', 'Users\UserController@update');
 // admin
 Route::get('/admin', 'Admins\KelolanilaiController@index');
 Route::post('/admin', 'Admins\KelolanilaiController@store');
+
