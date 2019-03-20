@@ -6,5 +6,8 @@ use Illuminate\Http\Request;
 
 class controlerhistory extends Controller
 {
-    //
+    public function view()
+    {
+        return view('/history');
+    }
 }

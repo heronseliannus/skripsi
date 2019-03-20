@@ -75,7 +75,7 @@ Route::get('/laporan', function()
   return view('user/laporan');
 });
 
-Route::get('/layout', function() 
+Route::get('/history', function() 
 {
   return view('layout/history');
 
