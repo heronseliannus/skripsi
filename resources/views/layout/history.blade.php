@@ -26,7 +26,7 @@
                        melakukan langkah  breakthrough dengan menyempurnakan integrasi sesuai dengan
                        konsep CorpU  yang ideal.
                     </p>
-                <a href="#" class="button white">Watch video</a>
+                <a href="http://localhost:8000/" class="button white">Watch video</a>
                 </div>
             </div>
         </div>
