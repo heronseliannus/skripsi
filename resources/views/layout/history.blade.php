@@ -25,6 +25,14 @@
                        pencanangan program Center  of Excellence dengan Telkom CorpU, maka Telkom
                        melakukan langkah  breakthrough dengan menyempurnakan integrasi sesuai dengan
                        konsep CorpU  yang ideal.
+                       Dengan Telkom CorpUmaka Telkom melakukan langkah  breakthroughTelkom Corporate
+                       University (Telkom CorpU) didefinisikan sebagai  wahana strategis
+                       yang dirancang untuk mendukung pencapaian misi perusahaan dengan melakukan
+                       kegiatan-kegiatan untuk memperkuat dan  memperkokoh kemampuan belajar individu
+                       dan organisasi dalam rangka  membentuk Center of Excellence. Dengan adanya
+                       pencanangan program Center  of Excellence dengan Telkom CorpU, maka Telkom
+                       melakukan langkah  breakthrough dengan menyempurnakan integrasi sesuai dengan
+                       konsep CorpU  yang ideal.
                     </p>
                 <a href="http://localhost:8000/" class="button white">Watch video</a>
                 </div>
