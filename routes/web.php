@@ -107,4 +107,3 @@ Route::put('/users{nik}', 'Users\UserController@update');
 // admin
 Route::get('/admin', 'Admins\KelolanilaiController@index');
 Route::post('/admin', 'Admins\KelolanilaiController@store');
-
