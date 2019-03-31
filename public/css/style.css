@@ -88,7 +88,7 @@ body {
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus {
-    -webkit-box-shadow: 0 0 0px 1000px white inset !important;
+    -webkit-box-shadow: 0 0 0px 1000px white insret !important;
 }
 
 /**
@@ -321,7 +321,7 @@ input:-webkit-autofill:focus {
 }
 
 .mainmenu-area #primary-menu > ul > li > a {
-    background: none;ffffff
+    background: none;
     padding: 30px 15px;
     position: relative;
     border-top: 3px solid transparent;
@@ -343,7 +343,8 @@ input:-webkit-autofill:focus {
     opacity: 0;
     -webkit-transition: 0.3s;
     transition: 0.3s;
-}
+}git 
+
 
 .mainmenu-area #primary-menu > ul > li > a:hover:before,
 .mainmenu-area #primary-menu > ul > li.active > a:before {

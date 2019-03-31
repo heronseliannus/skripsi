@@ -25,8 +25,8 @@ class UserTableSeeder extends Seeder
             'address' => 'Jalan Picung 107, Sukasari',
             'city' => 'Bandung',
             'state' => 'Jawa Barat',
-            'program' => 'Pelatihan Kepemimpinan'
-            'birth_date' =>  Carbon::parse('10-07-1990'),
+            'program' => 'Pelatihan Kepemimpinan',
+            'birth_date' =>  Carbon::parse ('10-07-1990'),
             'email' => 'heronselianus1795@gmail.com',
             'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
             'updated_at' => Carbon::now()->format('Y-m-d H:i:s'),
@@ -47,7 +47,7 @@ class UserTableSeeder extends Seeder
             'address' => 'Jalan Picung, Sukasari',
             'city' => 'Bandung',
             'state' => 'Jawa Barat',
-            'program' => 'Pelatihan Kampiun'
+            'program' => 'Pelatihan Kampiun',
             'birth_date' =>  Carbon::parse('10-07-1995'),
             'email' => 'heronselianus171095@gmail.com',
             'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
@@ -68,7 +68,7 @@ class UserTableSeeder extends Seeder
              'address' => 'Jalan Picung, Sukasari',
              'city' => 'Bandung',
              'state' => 'Jawa Barat',
-             'program' => 'Pelatihan Kampiun'
+             'program' => 'Pelatihan Kampiun',
              'birth_date' =>  Carbon::parse('10-07-1995'),
              'email' => 'heronselianus171095@gmail.com',
              'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
