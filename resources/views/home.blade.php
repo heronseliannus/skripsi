@@ -373,7 +373,8 @@
                         <h2>Client says</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit voluptates, temporibus at, facere harum fugiat!</p>
                     </div>
-                </div>
+                </div>Route::get('/', function() {
+
             </div>
             <div class="row">
                 <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
