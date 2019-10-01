@@ -15,7 +15,7 @@ class UserTableSeeder extends Seeder
     {
         $roleId = DB::table('roles')->pluck('id')[0];
         DB::table('users')->insert([
-            'first_name' => 'hero',
+            'first_name' => 'Aldy',
             'last_name' => 'selianus', 
             'nik' => '980076',
             'phone' =>'0852337689',

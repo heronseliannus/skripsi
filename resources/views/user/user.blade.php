@@ -1,6 +1,6 @@
 @extends('layout/tampilan')
 
-@section('title','Tabel Daftar Peserta')
+@section('title',' Daftar Peserta')
 
 @section('content')
 <footer class="footer-area" id="kelolaregistrasi-form">
